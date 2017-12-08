@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Statistics > Nonparametrics > 1-Sample Sign Test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+      <p>
+      <h1>Statistics > Nonparametrics > 1-Sample Sign Test</h1>
+      This utility performs calculations for testing claims about a population
+      median for the case when the type of
+      population distribution cannot be assumed.
+        The null hypothesis H<sub>0</sub> of a claim is median = median<sub>0</sub>,
+        where median<sub>0</sub> is the hypothesized median.
+        The alternative
+      hypothesis H<sub>1</sub>
+      can be one of the following: median &lt; median<sub>0</sub>,
+      median &gt; median<sub>0</sub>, or median &ne; median<sub>0</sub>.
+  </p>
+  <p>
+      A sample value above median<sub>0</sub> is assigned a positive (+) sign.
+      A sample value below median<sub>0</sub> is assigned a negative (-) sign.
+      The test statistic is computed as follows:
+      <ul>
+          <li>Left-tailed (H<sub>1</sub>: median &lt; median<sub>0</sub>):
+          s = the number of positive (+) signs</li>
+          <li>Right-tailed (H<sub>1</sub>: median &gt; median<sub>0</sub>):
+          s = the number of negative (-) signs</li>
+          <li>Two-tailed (H<sub>1</sub>: median &ne; median<sub>0</sub>):
+          s = the minimum of the number of (+) signs and the number of
+          (-) signs
+      </ul>
+  </p>
+  <p>
+      The p-value for a one-tailed test (left-tailed or right-tailed) is
+      <i>P(X &le; s)</i> where <i>X</i> is a random variable representing the number
+      of positive signs.  The p-value for a two-tailed test is
+      <i>2P(X &le; s)</i>.
+  </p>
+  <p>
+      If the sample size <i>n</i> (excluding values that are equal to the hypothesized
+      mean) is not more than 50, exact binomial probability calculations
+      are used to compute the p-value.  If the sample size is greater than
+      50, the normal distribution is used as an approximation to binomial:
+  </p>
+  <center>
+    <img src="normal_approx_ts.png">
+  </center>
+
+  <p>
+      To use the utility, follow these steps:
+  </p>
+  <ul>
+  <li>If individual samples are entered in a single column of the 
+  Datasheet, select the <b>Samples in column:</b> radio button, and
+  select the column name in the drop-down menu.</li>
+  <li>To use summary statistics of the sample data, select the 
+  <b>Summarized sample data:</b> radio button, and input the number
+  of positive signs and the number of negative signs in the provided text fields.</li>
+    <li>Select the form of the alternative hypothesis in the
+    <b>Alternative Hypothesis:</b> drop-down menu.  Enter the 
+    hypothesized population median in the provided text box.</li>
+    <li>Click the <b>OK</b> button to perform the computation.  The 
+    results will be displayed in the log window.</li>
+  </ul>
+
+
+  </body>
+</html>

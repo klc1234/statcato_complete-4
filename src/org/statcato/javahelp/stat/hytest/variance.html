@@ -1,0 +1,101 @@
+<!-- 
+    Document   : mean
+    Created on : May 29, 2008, 9:30:34 AM
+    Author     : myau
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Statistics > Hypothesis Tests > 1-Population Variance</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+      <p>
+      <h1>Statistics > Hypothesis Tests > 1-Population Variance</h1>
+      This utility performs calculations for testing claims about a population
+      variance (or standard deviation).  The population is assumed to have a
+      normal distribution.  The null hypothesis of a claim about a
+      population variance <i>&sigma;<sup>2</sup></i> is 
+      <i>&sigma = &sigma<sub>0</sub><sup>2</sup></i>.  The alternative
+      hypothesis can be one of the following: <i>&sigma; &lt; &sigma;<sub>0</sub></i>,
+      <i>&sigma; &gt; &sigma;<sub>0</sub></i>, or 
+      <i>&sigma; &ne; &sigma;<sub>0</sub></i>.
+  </p>
+  <p>The test statistic is computed using the following formula:
+  </p>
+  <center>
+      <img src="chi2_var.gif">
+  </center>
+  <p>
+      where <i>s</i> is the sample standard deviation, &sigma;
+      is the hypothesized population standard deviation, 
+      and <i>n</i> is the sample size.
+  </p>
+
+  <p>
+      To use the utility, follow these steps:
+  </p>
+  <ul>
+
+  <li>If individual samples are entered in a single column of the 
+  Datasheet, select the <b>Samples in column:</b> radio button, and
+  select the column name in the drop-down menu.</li>
+  <li>To use summary statistics of the sample data, select the 
+  <b>Summarized sample data:</b> radio button, and input the sample size
+in the provided text field.  Select the <b>Variance</b> radio button
+ to provide the sample variance, and enter the sample variance in the 
+ given text field.  To provide the sample standard deviation, select
+the <b>Standard deviation</b> radio button and input it in the corresponding
+text field.</li>
+    <li>Enter the significance or confidence level (between 0 and 1).</li>
+    <li>Select the form of the alternative hypothesis in the
+    <b>Alternative Hypothesis:</b> drop-down menu.  Enter the 
+    hypothesized population variance in the provided text box.</li>
+    <li>Click the <b>OK</b> button to perform the computation.  The 
+    results will be displayed in the log window.</li>
+  </ul>
+  
+  <h3>Sample Outputs</h3>
+  <p>
+      The null hypothesis and the alternative hypothesis are displayed.
+      The results, along with the input parameters, are displayed in a table.
+      <br>
+      [N = sample size; Sample Stdev s = sample standard deviation 
+      calculated from the individual samples
+      or provided directly by the user; Sample Var s2 = sample variance;
+      Significance Level = 1 - confidence level; Critical Value = 
+      critical value corresponding to the significance level; 
+      Test Statistic = test statistic corresponding to the hypothesized variance; 
+      p-Value = p-Value corresponding to the test statistic]
+  </p>
+  <br><br>
+<font face="courier">  
+Hypothesis Test - One population variance: confidence level = 0.95 <br>
+Input: Summary data <br>
+Null hypothesis: &sigma;<sup>2</sup> = 1.44 <br>
+Alternative hypothesis: &sigma;<sup>2</sup> &ne; 1.44  <br>
+        <br>
+<table border="1">
+<tr>
+    <td>N</td>
+    <td>Sample Stdev s</td>
+    <td>Sample Var s2</td>
+    <td>Significance Level</td>
+    <td>Critical Value</td>
+    <td>Test Statistic</td>
+    <td>p-Value</td>
+</tr>
+<tr>
+<td>100</td>
+<td>1.500</td>
+<td>2.250</td>
+<td>0.05</td>
+<td>73.361, 128.422</td>
+<td>154.688</td>
+<td>0.0006</td>
+</tr>
+</table>
+
+</font>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!-- 
+    Document   : index
+    Created on : Jul 18, 2008, 9:10:26 AM
+    Author     : myau
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Statistics > Analysis of Variance > One-Way ANOVA</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+      <h1>Statistics > Analysis of Variance > One-Way ANOVA</h1>
+      <p>
+  One-way analysis of variance uses one factor to categorize three or more 
+  populations.  It is used to test hypotheses that three or more population means
+  are equal.  The null hypothesis <i>H<sub>0</sub></i> is 
+  <i>&mu;<sub>1</sub> = &mu;<sub>2</sub> = ... = &mu;<sub>k</sub></i>,
+  where <i>&mu;<sub>i</sub></i> is the mean of population <i>i</i> of 
+  <i>k</i> populations.  
+</p>
+    <p>
+        The test statistic F is the ratio of two estimates of the variance
+        common to the <i>k</i> populations:        
+    </p>
+    <p><center><img src="ts_F.gif"></center></p>
+    <p>When the null hypothesis is true, it has an <i>F</i> distribution 
+    with degrees of freedom given by </p>
+    <p><center>numerator degrees of freedom = <i>k - 1</i></center></p>
+    <p><center>denominator degrees of freedom = <i>N - k</i></center></p>
+    <p>The test statistics <i>F</i> can be expressed as the ratio
+    MS(treatment) / MS (error).  
+    The mean square (MS) and sum of squares (SS) are computed in order to 
+    obtain <i>F</i>.
+</p>
+<p>
+    SS(treatment) is a sum of squares representing the 
+    variation between the sample means:   
+</p>
+<p><center><img src="SStreatment.gif"></center></p>
+<p>where <i>n<sub>i</sub></i> is the size of sample <i>i</i>, 
+<img src="xbar.gif"> is the mean of sample <i>i</i>,  
+<img src="xbarbar.gif">, and <i>N</i> is the sum of all sample sizes.
+</p>
+<p>
+    SS(error) is a sum of squares representing the variation that is assumed to 
+    be common to the populations:
+</p>
+<p><center><img src="SSerror.gif"></center></p>
+<p>
+    SS(total) is a measure of the total variation in all the sample data:
+</p>
+<p><center>SS(total) = SS(treatment) = SS(error)</center></p>
+<p>
+    MS(treatment) is the mean square for treatment:
+</p>
+<p><center><img src="MStreatment.gif"></center></p>
+<p>
+    MS(error) is the mean square for error:
+</p>
+<p><center><img src="MSerror.gif"></center></p>
+
+To use this utility, you will need to provide sample values for different
+populations in separate columns and specify the significance level.
+The SS and MS values are displayed along with the test statistic, critical
+value, and p-Value.
+
+  <h3>Dialog Inputs</h3>
+  <p>To include a column in the analysis, select the column name in the
+  <b>Select the column to be included in the analysis:</b> list and click
+  the <b>Add to list</b> button.  The selected column(s) will be added to the
+  <b>Responses</b> list.  To remove a column from the <b>Responses</b>
+  list, select it and click the <b>Remove from list</b> button.
+  Ctrl-click or shift-click to select multiple columns.
+</p>
+<p>
+    Click the <b>Clear Input List</b> button to clear the input list.
+</p>
+<p>
+    Enter the signicance level (a number between 0 and 1) in the 
+    <b>Significance level</b> text box.
+</p>
+    </body>
+</html>

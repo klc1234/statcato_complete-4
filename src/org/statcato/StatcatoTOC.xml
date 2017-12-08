@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE toc
+  PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp TOC Version 2.0//EN"
+           "http://java.sun.com/products/javahelp/toc_2_0.dtd">
+
+<toc version="2.0">
+<tocitem text="Statcato Help" target="overview">
+
+   <tocitem text="Introduction" target="intro">
+        <tocitem text="Getting Started" target="intro-getting-started"/>
+        <tocitem text="Toolbar" target="intro-toolbar"/>
+        <tocitem text="Keyboard Shortcuts" target="intro-shortcuts"/>
+    </tocitem>
+
+   <tocitem text="Windows" target="windows">
+        <tocitem text="Log" target="windows-log"/>
+        <tocitem text="Datasheet" target="windows-datasheet"/>
+        <tocitem text="History" target="windows-history"/>
+        <tocitem text="Menu" target="windows-menu"/>
+   </tocitem>
+   <tocitem text="Files" target="file">
+       <tocitem text="File Menu" target="file-menu"/>
+       <tocitem text="Options" target="file-options"/>
+       <tocitem text="Auto Save" target="file-auto-save"/>
+   </tocitem>
+
+  <tocitem text="Edit Data" target="edit">
+       <tocitem text="Edit Menu" target="edit-menu"/>
+       </tocitem>
+    
+    <tocitem text="Manipulate Data" target="data">
+        <tocitem text="Sort" target="data-sort"/>
+        <tocitem text="Rank" target="data-rank"/>
+        <tocitem text="Transpose" target="data-transpose"/>
+        <tocitem text="Display" target="data-display-data"/>
+        <tocitem text="Standardize" target="data-standardize"/>
+        <tocitem text="Generate Patterned Data" target="data-pattern">
+            <tocitem text="Simple Number Sequence" target="data-number-sequence"/>
+            <tocitem text="Arbitrary Data Sequence" target="data-data-sequence"/>
+        </tocitem>
+        <tocitem text="Generate Random Data" target="data-random">
+            <tocitem text="Binomial" target="data-random-binomial"/>
+            <tocitem text="Integer" target="data-random-integer"/>
+            <tocitem text="Normal" target="data-random-normal"/>
+            <tocitem text="Uniform" target="data-random-uniform"/>
+            <tocitem text="Samples from column" target="data-random-random-user"/>
+        </tocitem>
+   </tocitem>
+
+   <tocitem text="Calculate Data" target="calc">
+       <tocitem text="Calculator" target="calc-calculator"/>
+       <tocitem text="Probability Distributions" target="calc-prob">
+           <tocitem text="Normal" target="calc-normal"/>
+           <tocitem text="Student's t" target="calc-student"/>
+           <tocitem text="Chi-square" target="calc-student"/>
+           <tocitem text="F" target="calc-f"/>
+           <tocitem text="Exponential" target="calc-exponential"/>
+           <tocitem text="Uniform" target="calc-uniform"/>
+           <tocitem text="Binomial" target="calc-binomial"/>
+           <tocitem text="Discrete" target="calc-discrete"/>
+           <tocitem text="Geometric" target="calc-geometric"/>
+           <tocitem text="Integer" target="calc-integer"/>
+           <tocitem text="Poisson" target="calc-poisson"/>
+       </tocitem>
+       <tocitem text="P-value" target="calc-pvalue"/>
+       <tocitem text="Frequency Table" target="calc-freqtable"/>
+   </tocitem>
+
+   <tocitem text="Statistics" target="stat">
+       <tocitem text="Basic Statistics" target="stat-basic">
+           <tocitem text="Descriptive Statistics" target="stat-basic-descriptive">
+                <tocitem text="Mean" target="desc-mean"/>
+                <tocitem text="SE of Mean" target="desc-semean"/>
+                <tocitem text="Standard Deviation" target="desc-stdev"/>
+                <tocitem text="Variance" target="desc-variance"/>
+                <tocitem text="Coefficient of Variation" target="desc-coefficient_variation"/>
+                <tocitem text="First Quartile" target="desc-q1"/>
+                <tocitem text="Median" target="desc-median"/>
+                <tocitem text="Third Quartile" target="desc-q3"/>
+                <tocitem text="Interquartile Range" target="desc-iqr"/>
+                <tocitem text="Mode" target="desc-mode"/>
+                <tocitem text="Percentile" target="desc-percentile"/>
+                <tocitem text="Trimmed Mean" target="desc-trimmed_mean"/>
+                <tocitem text="Sum" target="desc-sum"/>
+                <tocitem text="Minimum" target="desc-minimum"/>
+                <tocitem text="Maximum" target="desc-maximum"/>
+                <tocitem text="Range" target="desc-range"/>
+                <tocitem text="Sum of Squares" target="desc-sum_of_squares"/>
+                <tocitem text="Skewness" target="desc-skewness"/>
+                <tocitem text="Kurtosis" target="desc-kurtosis"/>
+                <tocitem text="MSSD" target="desc-mssd"/>
+                <tocitem text="N nonmissing" target="desc-nnonmissing"/>
+                <tocitem text="N missing" target="desc-nmissing"/>
+                <tocitem text="N total" target="desc-ntotal"/>
+                <tocitem text="Cumulative N" target="desc-cumulativen"/>
+                <tocitem text="Percent" target="desc-percent"/>
+                <tocitem text="Cumulative Percent" target="desc-cumulativepercent"/>
+           </tocitem>
+           <tocitem text="Column Statistics" target="stat-basic-column"/>
+           <tocitem text="Row Statistics" target="stat-basic-row"/>
+           <tocitem text="Normality Test" target="stat-basic-normality"/>
+       </tocitem>
+
+       <tocitem text="Sample Size Determination" target="stat-sample-size">
+           <tocitem text="1-Population Mean" target="stat-sample-size-mean"/>
+           <tocitem text="1-Population Proportion" target="stat-sample-size-prop"/>
+       </tocitem>
+
+       <tocitem text="Confidence Intervals" target="stat-ci">
+           <tocitem text="1-Population Mean" target="stat-ci-1mean"/>
+           <tocitem text="1-Population Proportion" target="stat-ci-1prop"/>
+           <tocitem text="1-Population Variance" target="stat-ci-1var"/>
+           <tocitem text="2-Population Mean" target="stat-ci-2mean"/>
+           <tocitem text="2-Population Proportion" target="stat-ci-2prop"/>
+           <tocitem text="2-Population Variance" target="stat-ci-2var"/>
+           <tocitem text="Matched Pairs" target="stat-ci-matched"/>
+       </tocitem>
+
+       <tocitem text="Hypothesis Tests" target="stat-hytest">
+           <tocitem text="1-Population Mean" target="stat-hytest-mean"/>
+           <tocitem text="1-Population Proportion" target="stat-hytest-prop"/>
+           <tocitem text="1-Population Variance" target="stat-hytest-var"/>
+           <tocitem text="2-Population Mean" target="stat-hytest-2mean"/>
+           <tocitem text="2-Population Proportion" target="stat-hytest-2prop"/>
+           <tocitem text="2-Population Variance" target="stat-hytest-2var"/>
+           <tocitem text="Matched Pairs" target="stat-hytest-matched"/>
+           <tocitem text="Conclusion" target="stat-hytest-conc"/>
+       </tocitem>
+
+       <tocitem text="Correlation and Regression" target="stat-reg">
+           <tocitem text="Linear Two Variables" target="stat-reg-two-variables"/>
+           <tocitem text="Correlation Matrix" target="stat-reg-two-variables-all-pairs"/>
+           <tocitem text="Multiple Regression" target="stat-reg-multiple-regression"/>
+           <tocitem text="Non-Linear Models" target="stat-reg-nonlinear"/>
+           <tocitem text="Spearman's Rank Correlation" target="stat-nonparam-rank-correlation"/>
+       </tocitem>
+
+       <tocitem text="Multinomial" target="stat-multi">
+            <tocitem text="Chi-Square Goodness-of-Fit" target="stat-multi-goodness"/>
+            <tocitem text="Chi-Square Contingency Table" target="stat-multi-contingency_table"/>
+            <tocitem text="Cross Tabulation and Chi-Square" target="stat-cross-tabulation"/>
+       </tocitem>
+
+       <tocitem text="Analysis of Variance" target="stat-anova">
+           <tocitem text="One-way ANOVA" target="stat-anova1"/>
+           <tocitem text="Two-way ANOVA" target="stat-anova2"/>
+       </tocitem>
+
+       <tocitem text="Nonparametrics" target="stat-nonparam">
+           <tocitem text="1-Sample Sign Test" target="stat-nonparam-signtest"/>
+           <tocitem text="2-Sample Matched-Pair Sign Test" target="stat-nonparam-2signtest"/>
+           <tocitem text="Wilcoxon Signed Rank Test" target="stat-nonparam-wilcoxon"/>
+           <tocitem text="Wilcoxon Rank Sum / Mann-Whitney Test" target="stat-nonparam-wilcoxon-rank-sum"/>
+           <tocitem text="Kruskal-Wallis Test" target="stat-nonparam-kruskal-wallis"/>
+           <tocitem text="Spearman's Rank Correlation" target="stat-nonparam-rank-correlation"/>
+           <tocitem text="Runs Test" target="stat-nonparam-runs-test"/>
+        </tocitem>
+       </tocitem>
+
+       <tocitem text="Graph" target="graph">
+           <tocitem text="Bar Chart" target="graph-barchart"/>
+           <tocitem text="Box Plot" target="graph-boxplot"/>
+           <tocitem text="Dot Plot" target="graph-dotplot"/>
+           <tocitem text="Histogram" target="graph-histogram"/>
+           <tocitem text="Normal Quantile Plot" target="graph-nqp"/>
+           <tocitem text="Pie Chart" target="graph-piechart"/>
+           <tocitem text="Scatterplot" target="graph-scatterplot"/>
+           <tocitem text="Stem-and-Leaf Plot" target="graph-stemplot"/>
+           <tocitem text="Residual Plot" target="graph-residual"/>
+       </tocitem>
+
+       <tocitem text="Check for Updates" target="updates" />
+           
+
+       <tocitem text="References" target="reference"/>
+       <tocitem text="License" target="license"/>
+
+</toc>

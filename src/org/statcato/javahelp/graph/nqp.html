@@ -1,0 +1,53 @@
+<!-- 
+    Document   : Normal Quantile Plot
+    Created on : July 22, 2008
+    Author     : myau
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Graph > Normal Quantile Plot</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+      <h1>Graph > Normal Quantile Plot</h1>
+      <p>
+          A normal quantile plot is a graph of points (<i>x, y</i>) where
+          sample data values are plotted against their
+          expected z scores in a normal distribution corresponding 
+          to their positions with respect to other data values.
+          The expected z scores for the sorted sample data values (in
+          ascending order)
+          are the inverse cumulative normal probabilities
+          of <i>(2i + 1)/(2n)</i>, where <i>n</i> is the sample size and
+          <i>i=0..n-1</i>.  
+  </p>
+    <p>
+        <img src="images/nqp.gif">
+    </p>      
+
+  <p>
+      The normal quantile plot utility allows the user to specify 
+      a column containing the data values.    
+      It also provides the options of having a plot title, axis labels, 
+      and a regression line.  The user can select whether
+      the data values should be used as x or y coordinates and
+      specify the significance for the Ryan-Joiner normality test.
+  </p>
+  <ul>
+      <li>To open the plot utility, select <b>Graph > Normal Quantile Plot</b>.</li>
+      <li>Select the column containing the data values in 
+    the <b>Select the column for which the plot will be created</b> 
+    drop-down menu.</li>
+    <li>Enter the plot title in the <b>Plot Title:</b> text field.</li>
+    <li>Enter labels for the x and y axis in the corresponding text fields.</li>
+    <li>Select the <b>Show regression line</b> check box to show a best-fit line
+    to the points on the plot.</li>
+    <li>Select the significance level used in the Ryan-Joiner
+    normality test.</li>
+    <li>Click <b>OK</b> to create the plot.  The results of the Ryan-Joiner
+    normality test will be displayed in the log window.</li>
+  </ul>
+    
+  </body>
+</html>

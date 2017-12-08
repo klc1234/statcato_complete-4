@@ -1,0 +1,91 @@
+<!-- 
+    Document   : mean
+    Created on : May 29, 2008, 9:30:34 AM
+    Author     : myau
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Statistics > Hypothesis Tests > 1-Population Proportion</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+      <p>
+      <h1>Statistics > Hypothesis Tests > 1-Population Proportion</h1>
+      This utility performs calculations for testing claims about a population
+      proportion.  A normal distribution is used to approximate
+      the binomial distribution.  The null hypothesis of a claim about a
+      population proportion <i>p</i> is <i>p = p<sub>0</sub></i>.  The alternative
+      hypothesis can be one of the following: <i>p &lt; p<sub>0</sub></i>,
+      <i>p &gt; p<sub>0</sub></i>, or <i>p &ne; p<sub>0</sub></i>.
+  </p>
+  <p>The test statistic is computed using the following formula:
+  </p>
+  <center>
+      <img src="z_prop.gif">
+  </center>
+  <p>
+      where <img src="pHat.gif"> is the sample proportion, <i>p</i>
+      is the hypothesized population proportion, 
+      and <i>n</i> is the sample size.
+  </p>
+
+  <p>
+      To use the utility, follow these steps:
+  </p>
+  <ul>
+
+  <li>If individual samples are entered in a single column of the 
+  Datasheet, select the <b>Samples in column:</b> radio button, and
+  select the column name in the drop-down menu.</li>
+  <li>To use summary statistics of the sample data, select the 
+  <b>Summarized sample data:</b> radio button, and input the number
+  of events and the number of trials in the provided text fields.</li>
+    <li>Enter the significance or confidence level (between 0 and 1).</li>
+    <li>Select the form of the alternative hypothesis in the
+    <b>Alternative Hypothesis:</b> drop-down menu.  Enter the 
+    hypothesized population proportion in the provided text box.</li>
+    <li>Click the <b>OK</b> button to perform the computation.  The 
+    results will be displayed in the log window.</li>
+  </ul>
+  
+  <h3>Sample Outputs</h3>
+  <p>
+      The null hypothesis and the alternative hypothesis are displayed.
+      The results, along with the input parameters, are displayed in a table.
+      <br>
+      [N = sample size; Sample Proportion = calculated from the individual samples
+      or provided directly by the user; 
+      Significance Level = 1 - confidence level; Critical Value = 
+      critical value corresponding to the significance level; 
+      Test Statistic = test statistic corresponding to the hypothesized proportion; 
+      p-Value = p-Value corresponding to the test statistic]
+  </p>
+  <br><br>
+<font face="courier">  
+Hypothesis Test - One population proportion: confidence level = 0.95 <br>
+Input: Summary data <br>
+    Null hypothesis: p = 0.1<br> 
+    Alternative hypothesis: p > 0.1  <br>
+        <br>
+<table border="1">        
+    <tr>
+    <td>N</td>
+    <td>Sample Proportion</td>
+    <td>Significance Level</td>
+    <td>Critical Value</td>
+    <td>Test Statistic</td>
+    <td>p-Value</td>
+</tr>
+<tr>
+<td>100</td>
+<td>0.200</td>
+<td>0.05</td>
+<td>1.645</td>
+<td>3.333</td>
+<td>0.0004</td>
+</tr>
+</table>
+</font>
+  </body>
+</html>

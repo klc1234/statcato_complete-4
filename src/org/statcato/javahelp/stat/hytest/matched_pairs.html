@@ -1,0 +1,69 @@
+<!-- 
+    Document   : two_pop_prop
+    Created on : Jun 6, 2008, 4:23:44 PM
+    Author     : myau
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Statistics > Hypothesis Test > Matched Pairs</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+      <h1>Statistics > Hypothesis Test > Matched Pairs</h1>
+      
+      <p>
+        This utility performs calculations for testing claims about the
+      mean of the differences between a population of matched pairs.  
+      The population is assumed to be
+      approximately normal.  The null hypothesis of a claim about a
+      population mean &mu; is &mu; = &mu;<sub>d</sub>.  The alternative
+      hypothesis can be one of the following: &mu; &lt; &mu;<sub>d</sub>,
+      &mu; &gt; &mu;<sub>d</sub>, or &mu; &ne; &mu;<sub>d</sub>.
+      </p>
+      <p>
+          The hypothesis test statistic is given by:
+      </p>
+      <p>
+          <center><img src="t_matched_pairs.gif"></center>
+      </p>
+      <p>
+          where <img src="d_bar.gif"> is 
+          the mean of the differences between sample matched pairs, 
+          <i>s<sub>d</sub></i> is the standard deviation of the differences
+          between sample matched pairs, and <i>n</i> is the number of
+          matched pairs.  The degrees of freedom is <i>n - 1</i>.
+      </p>
+      <h3>Dialog Inputs</h3>
+      <p>
+          The sample data can be inputted in one of two ways:
+          <ul>
+              <li><b>Samples in columns</b>: 
+              The sample matched pairs are provided in
+              two columns, and the two values in a matched pair
+              are provided in the same row.  
+              Select the column containing values of
+              the first sample in <b>First Sample:</b> drop-down menu.
+              Select the column containing values of the second sample 
+              in <b>Second Sample:</b> drop-down menu.
+              <li><b>Summarized Sample Data</b>: The sample size,
+              mean, and standard deviation
+              are provided (instead of individual sample values).</li>
+          </ul>
+      </p>
+      <p>
+          The significance level or confidence level must be between 0 and 1.  For example,
+          enter 0.95 for a 95% confidence level.
+      </p>
+      <p>
+          The <b>Alternative Hypothesis</b> can be one of the following forms:
+          <b>Less than</b> (<i>&mu; &lt; 
+          &mu;<sub>d</sub></i>), <b>Not Equal to</b> (<i>&mu; 
+          &ne; &mu;<sub>d</sub></i>), or <b>Greater than</b>
+      (<i>&mu; &gt; &mu;<sub>d</sub></i>).  Enter the <b>Hypothesized
+      Mean Difference</b> (hypothesized mean of differences for the population of all
+      matched pairs)  in
+      the provided text box.
+      </p>
+  </body>
+</html>

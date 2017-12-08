@@ -1,0 +1,61 @@
+<!-- 
+    Document   : one_pop_mean
+    Created on : May 21, 2008, 1:15:08 PM
+    Author     : myau
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Statistics > Confidence Intervals > 1-Population Mean</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+      <h1>Statistics > Confidence Intervals > 1-Population Mean</h1>
+      <p>
+          This utility computes the confidence intervals for a population mean
+          in one population, whether the population standard deviation is
+          known or unknown.  The confidence intervals are calculated using the 
+          following formulas:
+          <br><br>
+          <center>
+              <img src="ci_mean.gif"><br><br>
+              where  <img src="E_mean_sigma_known.gif"> when 
+              population standard deviation <img src="sigma.gif"> is known <br>
+                  or <img src="E_mean_sigma_unknown.gif"> when
+                  <img src="sigma.gif"> is unknown; <br>
+                  <img src="x_bar.gif"> = sample mean<br>
+                      &mu; = population mean<br>
+                   s = sample standard deviation<br>
+                          <img src="t_alpha_2.gif"> = inverse cumulative 
+                          probability of the Student's t distribution at 
+                          1 - &alpha;/2.<br>
+                <img src="z_alpha_2.gif"> = inverse cumulative 
+                          probability of the z distribution at 
+                          1 - &alpha;/2.              
+          </center>
+      </p>
+      <br><br>
+          
+      To use the utility, select <b>Statistics &gt; Confidence Intervals &gt; 1-Population Mean</b>.
+      <ul>
+         <li>If population standard deviation is known, select the <b>Known</b>
+         radio button, and enter the standard deviation in the given text box.  
+         Otherwise, select the <b>Unknown</b> radio button.</li>
+          <li>You can provide sample data in a column of the Datasheet or provide
+          summary data.  If your sample data is available in one column, select
+          the <b>Samples in column:</b> radio button, and enter the column names
+          (Enter valid column names separated by space.
+        For a continuous range of columns, separate using dash (e.g. C1-C30).).</li>
+        <li>If individual sample data is not available,  you can provide summary
+        information of the sample data.  In this case, select the <b>Summarized
+        sample data</b> radio button.  Enter the sample size, mean, and
+        standard deviation (only if population standard deviation is unknown) in
+    the provided text boxes.</li>
+        <li>Enter the confidence level (between 0 and 1) in the <b>
+        Confidence level:</b> text box.</li>
+        <li>Click <b>Ok</b> to compute the confidence interval.  The results
+        will be shown in the log window.</li>
+      </ul>
+      
+  </body>
+</html>

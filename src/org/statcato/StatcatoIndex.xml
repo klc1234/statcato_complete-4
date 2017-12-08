@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE toc
+  PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Index Version 2.0//EN"
+          "http://java.sun.com/products/javahelp/index_2_0.dtd">
+
+<index version="2.0">
+<indexitem text="About" target="intro"/>
+<indexitem text="Analysis of Variance" target="stat-anova">
+    <indexitem text="One-way ANOVA" target="stat-anova1"/>
+    <indexitem text="Two-way ANOVA" target="stat-anova2"/>
+</indexitem>
+<indexitem text="Auto Save" target="file-auto-save"/>
+<indexitem text="Basic Statistics" target="stat-basic"/>
+<indexitem text="Calculate" target="calc"/>
+<indexitem text="Calculator" target="calc-calculator"/>
+<indexitem text="Column Statistics" target="stat-basic-column"/>
+<indexitem text="Confidence Intervals" target="stat-ci">
+    <indexitem text="1-Population Mean" target="stat-ci-1mean"/>
+    <indexitem text="1-Population Proportion" target="stat-ci-1prop"/>
+    <indexitem text="1-Population Variance" target="stat-ci-1var"/>
+    <indexitem text="2-Population Mean" target="stat-ci-2mean"/>
+    <indexitem text="2-Population Proportion" target="stat-ci-2prop"/>
+    <indexitem text="2-Population Variance" target="stat-ci-2-var"/>
+    <indexitem text="Matched Pairs" target="stat-ci-matched"/>
+</indexitem>
+<indexitem text="Correlation and Regression" target="stat-reg">
+    <indexitem text="Linear Two Variables" target="stat-reg-two-variables"/>
+    <indexitem text="Correlation Matrix" target="stat-reg-two-variables-all-pairs"/>
+    <indexitem text="Multiple Regression" target="stat-reg-multiple-regression"/>
+    <indexitem text="Non-Linear Models" target="stat-reg-nonlinear"/>
+    <indexitem text="Spearman's Rank Correlation" target="stat-nonparam-rank-correlation"/>
+</indexitem>
+<indexitem text="Descriptive Statistics" target="stat-basic-descriptive">
+    <indexitem text="Mean" target="desc-mean"/>
+    <indexitem text="SE of Mean" target="desc-semean"/>
+    <indexitem text="Standard Deviation" target="desc-stdev"/>
+    <indexitem text="Variance" target="desc-variance"/>
+    <indexitem text="Coefficient of Variation" target="desc-coefficient_variation"/>
+    <indexitem text="First Quartile" target="desc-q1"/>
+    <indexitem text="Median" target="desc-median"/>
+    <indexitem text="Third Quartile" target="desc-q3"/>
+    <indexitem text="Interquartile Range" target="desc-iqr"/>
+    <indexitem text="Mode" target="desc-mode"/>
+    <indexitem text="Percentile" target="desc-percentile"/>
+    <indexitem text="Trimmed Mean" target="desc-trimmed_mean"/>
+    <indexitem text="Sum" target="desc-sum"/>
+    <indexitem text="Minimum" target="desc-minimum"/>
+    <indexitem text="Maximum" target="desc-maximum"/>
+    <indexitem text="Range" target="desc-range"/>
+    <indexitem text="Sum of Squares" target="desc-sum_of_squares"/>
+    <indexitem text="Skewness" target="desc-skewness"/>
+    <indexitem text="Kurtosis" target="desc-kurtosis"/>
+    <indexitem text="MSSD" target="desc-mssd"/>
+    <indexitem text="N nonmissing" target="desc-nnonmissing"/>
+    <indexitem text="N missing" target="desc-nmissing"/>
+    <indexitem text="N total" target="desc-ntotal"/>
+    <indexitem text="Cumulative N" target="desc-cumulativen"/>
+    <indexitem text="Percent" target="desc-percent"/>
+    <indexitem text="Cumulative Percent" target="desc-cumulativepercent"/>
+</indexitem>
+<indexitem text="Display Data" target="data-display-data"/>
+<indexitem text="Edit" target="edit">
+    <indexitem text="Edit Menu" target="edit-menu"/>
+</indexitem>
+<indexitem text="Files" target="file">
+    <indexitem text="File Menu" target="file-menu"/>
+</indexitem>
+<indexitem text="Frequency Table" target="calc-freqtable"/>
+<indexitem text="Generate Data">
+    <indexitem text="Patterned Data" target="data-pattern">
+        <indexitem text="Simple Number Sequence" target="data-number-sequence"/>
+        <indexitem text="Arbitrary Data Sequence" target="data-data-sequence"/>
+    </indexitem>
+    <indexitem text="Random Data" target="data-random">
+        <indexitem text="Binomial" target="data-random-binomial"/>
+        <indexitem text="Integer" target="data-random-integer"/>
+        <indexitem text="Normal" target="data-random-normal"/>
+        <indexitem text="Uniform" target="data-random-uniform"/>
+        <indexitem text="Samples from column" target="data-random-random-user"/>
+    </indexitem>
+</indexitem>
+<indexitem text="Getting Started" target="intro-getting-started"/>
+<indexitem text="Graph" target="graph">
+    <indexitem text="Bar Chart" target="graph-barchart"/>
+    <indexitem text="Box Plot" target="graph-boxplot"/>
+    <indexitem text="Dot Plot" target="graph-dotplot"/>
+    <indexitem text="Histogram" target="graph-histogram"/>
+    <indexitem text="Normal Quantile Plot" target="graph-nqp"/>
+    <indexitem text="Pie Chart" target="graph-piechart"/>
+    <indexitem text="Scatterplot" target="graph-scatterplot"/>
+    <indexitem text="Stem-and-Leaf Plot" target="graph-stemplot"/>
+    <indexitem text="Residual Plot" target="graph-residual"/>
+</indexitem>
+<indexitem text="Hypothesis Tests" target="stat-hytest">
+    <indexitem text="1-Population Mean" target="stat-hytest-mean"/>
+    <indexitem text="1-Population Proportion" target="stat-hytest-prop"/>
+    <indexitem text="1-Population Variance" target="stat-hytest-var"/>
+    <indexitem text="2-Population Mean" target="stat-hytest-2mean"/>
+    <indexitem text="2-Population Proportion" target="stat-hytest-2prop"/>
+    <indexitem text="2-Population Variance" target="stat-hytest-2var"/>
+    <indexitem text="Matched Pairs" target="stat-hytest-matched"/>
+    <indexitem text="Conclusion Tool" target="stat-hytest-conc"/>
+</indexitem>
+<indexitem text="License" target="license"/>
+<indexitem text="Menu">
+    <indexitem text="File Menu" target="file-menu"/>
+    <indexitem text="Edit Menu" target="edit-menu"/>
+    <indexitem text="Window Menu" target="windows-menu"/>
+</indexitem>
+<indexitem text="Multinomial" target="stat-multi">
+    <indexitem text="Chi-Square Goodness-of-Fit" target="stat-multi-goodness"/>
+    <indexitem text="Chi-Square Contingency Table" target="stat-multi-contingency_table"/>
+    <indexitem text="Cross Tabulation and Chi-Square" target="stat-cross-tabulation"/>
+</indexitem>
+<indexitem text="Nonparametrics" target="stat-nonparam">
+    <indexitem text="1-Sample Sign Test" target="stat-nonparam-signtest"/>
+    <indexitem text="2-Sample Matched-Pair Sign Test" target="stat-nonparam-2signtest"/>
+    <indexitem text="Wilcoxon Signed Rank Test" target="stat-nonparam-wilcoxon"/>
+    <indexitem text="Wilcoxon Rank Sum / Mann-Whitney Test" target="stat-nonparam-wilcoxon-rank-sum"/>
+    <indexitem text="Kruskal-Wallis Test" target="stat-nonparam-kruskal-wallis"/>
+    <indexitem text="Spearman's Rank Correlation" target="stat-nonparam-rank-correlation"/>
+    <indexitem text="Runs Test" target="stat-nonparam-runs-test"/>
+</indexitem>
+<indexitem text="Normality Test" target="stat-basic-normality"/>
+<indexitem text="Options" target="file-options"/>
+<indexitem text="Probability Distributions" target="calc-prob">
+    <indexitem text="Normal" target="calc-normal"/>
+    <indexitem text="Student's t" target="calc-student"/>
+    <indexitem text="Chi-square" target="calc-student"/>
+    <indexitem text="F" target="calc-f"/>
+    <indexitem text="Exponential" target="calc-exponential"/>
+    <indexitem text="Uniform" target="calc-uniform"/>
+    <indexitem text="Binomial" target="calc-binomial"/>
+    <indexitem text="Discrete" target="calc-discrete"/>
+    <indexitem text="Geometric" target="calc-geometric"/>
+    <indexitem text="Integer" target="calc-integer"/>
+    <indexitem text="Poisson" target="calc-poisson"/>
+</indexitem>
+<indexitem text="P-value" target="calc-pvalue"/>
+<indexitem text="Rank" target="data-rank"/>
+<indexitem text="References" target="reference"/>
+<indexitem text="Row Statistics" target="stat-basic-row"/>
+<indexitem text="Sample Size Determination" target="stat-sample-size">
+    <indexitem text="1-Population Mean" target="stat-sample-size-mean"/>
+    <indexitem text="1-Population Proportion" target="stat-sample-szie-prop"/>
+</indexitem>
+<indexitem text="Shortcuts" target="intro-shortcuts"/>
+<indexitem text="Sort" target="data-sort"/>
+<indexiten text="Standardize" target="data-standardize"/>
+<indexitem text="Toolbar" target="intro-toolbar"/>
+<indexitem text="Transpose" target="data-transpose"/>
+<indexitem text="Updates" target="updates"/>
+<indexitem text="Windows" target="windows">
+    <indexitem text="Datasheet" target="windows-datasheet"/>
+    <indexitem text="History" target="windows-history"/>
+    <indexitem text="Log" target="windows-log"/>
+    <indexitem text="Menu" target="windows-menu"/>
+</indexitem>
+</index>
+
+
+
+
+
+
+
+
+
+
+
+

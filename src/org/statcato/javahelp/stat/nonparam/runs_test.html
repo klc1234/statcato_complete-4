@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Statistics > Nonparametrics > Runs Test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+      <p>
+      <h1>Statistics > Nonparametrics > Runs Test</h1>
+      This utility performs calculations for the runs test,
+      which is a non-parametric test that uses the number of runs 
+      in a sequence of sample data to test for randomness in the order of the 
+      data.  A run is a sequence of data belonging to the same category.
+        The null hypothesis H<sub>0</sub> of a claim is that the sequence is
+        random.
+        The alternative hypothesis H<sub>1</sub> is that the sequence
+        is not random.
+  </p>
+  <p>
+      Each data value can be categorized into one of two separate categories.
+      For example, the two categories can be text descriptions
+      &quot;a&quot; and &quot;b&quot;.  For numerical data, the two categories
+      can be defined to be above and below a certain numerical value, such
+      as the mean.
+  </p>
+  <p>
+      Let <i>n<sub>1</sub></i> be the number of samples
+      belonging to the first category.
+      Let <i>n<sub>2</sub></i> be the number of samples
+      belonging to the second category.
+      Let <i>G</i> be the number of runs.
+  </p>
+  <p>
+      Using normal approximation, the test statistic z is
+  </p>
+  <p>
+  <center>
+    <img src="runs_ts.png">
+  </center>
+  </p>
+  where
+  <p><center><img src="runs_mu.png"><br><img src="runs_sigma.png"></center></p>
+  <p>
+      The two-tailed p-value and critical value are provided in the test
+      results.
+  </p>
+  <p>
+      To use the utility, you must provide the sample data in a single column
+      or provide the summary data.
+      
+      If a sample of fewer than ten observations is used,
+      a note indicating the presence of small samples will be shown.
+  </p>
+  <ul>
+      <li>If data samples are provided in a column, select the
+      <b>Samples in one column</b> radio button and select
+      the column name in the coresponding drop-down menu.</li>
+      <li>If summarized data is provided, select the
+      <b>Summarized sample data</b> radio button and provide
+      the number of category 1 elements, the number of category 2 elements,
+      and the number of runs.</li>
+      <li>Provide the significance level of the test (between 0 and 1).</li>
+      <li>If data samples are provided, the <b>Data Options</b> panel will be
+      shown.  Select the <b>Categorical</b> radio button if the samples
+      contain exactly two categories.  If the samples contain numerical values,
+      select the <b>Numerical</b>
+      radio button  and then
+      select the appropriate radio button to categorize
+      the numerical data into above and below the mean or a specified value.
+    </li>    
+    <li>Click the <b>OK</b> button to perform the computation.  The 
+    results will be displayed in the log window.</li>
+  </ul>
+
+  </body>
+</html>

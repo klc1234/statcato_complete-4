@@ -1,0 +1,72 @@
+<!-- 
+    Document   : sort
+    Created on : Apr 24, 2008, 2:11:00 PM
+    Author     : myau
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Data > Sort</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+      <h1>Data > Sort</h1>
+      <p>
+      The sort utility sorts a number of data columns by data up to four
+      columns.  You can store the sorted data in its original columns
+      or in a specific set of columns.  
+        </p>
+        <p>
+            If a column contains only numbers, the data will be sorted
+            by their numerical values.  Otherwise, the data will be sorted
+            as text in alphabetically order.
+        </p>
+  <ul>
+      <li>To open the sort utility, select <b>Data > Sort</b>.</li>
+      <li>In the <b>Input Columns:</b> text box, enter the names
+      of the columns.  Separate column names by spaces (e.g. c2  c4),
+      and use a dash to indicate a range of columns (e.g. c10-c15). </li>
+        <li>To store the sorted data in the original columns, select
+        <b>Store in original columns</b>.</li>
+        <li>To store the sorted data in a specific set of columns, enter
+        the column names in the 
+        <b>Store in these columns:</b> text box.
+        The number of input columns must be the same as
+        the number of columns for storing results.
+        The results of sorting the input column(s) will be
+    stored in the store columns in order.</li>
+    <li>To sort the input columns by data in another column, select
+        the appropriate column label in the <b>Sort By Column:</b> drop-down
+        menu.  Choose <b>Ascending</b> to sort in ascending order, or
+    <b>Descending</b> to sort in descending order.  To sort by
+    more columns, use the <b>Then By Column:</b> drop-down menus.
+    You may sort by at most four columns.</li>
+    <li>Click <b>OK</b> to sort.</li>  
+  </ul>
+  
+  <h3>Example</h3>
+<table>  
+    <tr><td>C1</td><td>C2</td><td>C3</tr>
+    <tr><td>a</td>	<td>2</td>	<td>5</td></tr>
+    <tr><td>b</td>	<td>2</td>	<td>7</td></tr>
+    <tr><td>c</td>	<td>2</td>	<td>3</td></tr>
+    <tr><td>d</td>	<td>2</td>	<td>2</td></tr>
+    <tr><td>e</td>	<td>1</td>	<td>9</td></tr>
+    <tr><td>f</td>	<td>1</td>	<td>8</td></tr>
+    <tr><td>g</td>	<td>1</td>	<td>7</td></tr>
+    <tr><td>h</td>	<td>1</td>	<td>6</td></tr>
+</table>  
+<br>
+    The result of sorting C1 by C2 and C3 is<br>
+<table>
+<tr><td>h</td></tr>
+<tr><td>g</td></tr>
+<tr><td>f</td></tr>
+<tr><td>e</td></tr>
+<tr><td>d</td></tr>
+<tr><td>c</td></tr>
+<tr><td>a</td></tr>
+<tr><td>b</td></tr>
+</table>        
+  </body>
+</html>

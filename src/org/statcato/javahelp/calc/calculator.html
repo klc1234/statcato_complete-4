@@ -1,0 +1,106 @@
+<!-- 
+    Document   : calculator
+    Created on : May 13, 2008, 3:33:57 PM
+    Author     : myau
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Calculate > Calculator</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+      <h1>Calculate > Calculator</h1>
+      <p>
+      This utility parses and evaluates mathematical expressions.  
+      It supports addition, subtraction, multiplication, division,
+      power, and a collection of common mathematical functions
+      (such as sin, cos, tan, exponential, etc).  Operands can be numbers
+      or numerical data within columns, and the results can be stored in 
+      the Datasheet.
+        </p>
+        
+        <h4>Expression Format</h4>
+        <ul>
+            <li>Addition: <i>a</i> <b>+</b> <i>b</i></li>
+            <li>Subtraction: <i>a</i> <b>-</b> <i>b</i></li>
+            <li>Multiplication: <i>a</i> <b>*</b> <i>b</i></li>
+            <li>Division: <i>a</i> <b>/</b> <i>b</i></li>
+            <li>Power: <i>a</i> <b>^</b> <i>b</i></li>
+            <li>Group: <b>(</b> <i>a</i> <b>)</b></li>
+            <li>Function: <i>function_name</i><b>(</b><i> a </i><b>)</b></li>
+            <li>Constant <i>&pi;</i>: pi</li>
+        </ul>
+        <i>a</i> and <i>b</i> can be numbers, column numbers, column variable
+        names (delimited by "") or 
+        valid expressions of the format described above.  
+        <i>function_name</i> has to be a valid function name (described below).
+        The parser is case-sensitive (uppercase and lowercase letters
+        are different).  Parentheses must be matched.
+        
+        <h4>Operator Precedence and Associativity</h4>
+            <ul>
+                <li>Parentheses have precedence over all operators.</li>
+                <li>The power operator (^) has precedence over +,-,*, and /.</li>
+                <li>* and / have precedence over binary operators + and -.</li>
+                <li>Unary - has precedence over binary + and -.</li>
+                <li>The power operator (^) is right associative, and 
+                all other operators are left associative.</li>               
+            </ul>
+            
+            <h4>Available Functions</h4>
+            <p>Functions must be invoked in the form of
+                <i>function_name</i><b>(</b><i> a </i><b>)</b>, where the 
+                argument <i>a</i> is a valid expression.</p>
+            <dl>
+                <dt>abs</dt><dd>absolute value</dd>
+                <dt>arccos</dt><dd>arc cosine / cosine inverse</dd>
+                <dt>arcsin</dt><dd>arc sine / sine inverse</dd>
+                <dt>arctan</dt><dd>arc tangent / tangent inverse</dd>
+                <dt>ceil</dt><dd>ceiling (smallest integer that 
+                is not less than the argument)</dd>
+                <dt>cos</dt><dd>cosine</dd>
+                <dt>exp</dt><dd>Euler's number e raised to the power of 
+                the argument</dd>
+                <dt>factorial</dt><dd>factorial x! = x(x-1)(x-2)...1</dd>
+                <dt>floor</dt><dd>floor (largest integer that is not 
+                greater than the argument)</dd>
+                <dt>ln</dt><dd>natural logarithm</dd>
+                <dt>log</dt><dd>logarithm base 10</dd>
+                <dt>round</dt><dd>round to the closest integer, 
+                obtained by floor(<i>a</i> + 0.5)</dd>
+                <dt>sin</dt><dd>sine</dd>
+                <dt>sqrt</dt><dd>square root</dd>
+                <dt>tan</dt><dd>tangent</dd>
+            </dl>
+            
+            <h4>For Trigonometric Functions</h4>
+            Select whether the input is specified in radians or degrees.
+            The conversions from radians to degrees and from degrees to 
+            radians are generally inexact.  Thus, do not expect 
+            arccos(cos(<i>x</i>)) to be exactly <i>x</i> degrees.
+
+<h4>Input Interface</h4>
+<p>Enter a mathematical expression directly into the expression text box,
+or use the provided buttons and function list to construct your input
+expression.  The numbers 0 to 9, the decimal point ., and the constant
+&pi; are available in the <b>Numbers</b> panel. The operators 
++, -, *, /, ^, &radic (square root), e^ (exponential), and parentheses
+are available in the <b>Operators</b> panel.  The <b>Functions</b>
+panel contains the list of mathematical functions available.  To use
+a function in the list, first click on the function name, then click 
+the <b>Select</b> button.  For trignometric functions, select 
+radians or degrees mode using the corresponding radio buttons.
+Click <b>OK</b> to evaluate the input expression.  The result is displayed
+the the results panel.  Click <b>Back</b>
+for backspace, and <b>Clear</b> to clear the input box and results panel.
+</p>
+
+    <h4>Store Results in Datasheet (optional)</h4>
+    <p>
+        Computed results can be stored in a column of the current
+        Datasheet.  If storing results is desired, enter the column name
+        or variable name (e.g. C1) in the provided text box.
+        </p>
+  </body>
+</html>

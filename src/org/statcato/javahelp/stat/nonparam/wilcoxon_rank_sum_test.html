@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Statistics > Nonparametrics > Wilcoxon Rank Sum Test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+      <p>
+      <h1>Statistics > Nonparametrics > Wilcoxon Rank Sum Test</h1>
+      This utility performs calculations for the Wilcoxon Rank Sum Test
+      (also known as Mann-Whitney),
+      which is a non-parametric test that uses ranks of samples from two
+      independent populations to test whether two populations have the
+      same distribution.
+        The null hypothesis H<sub>0</sub> of a claim is 
+        median<sub>1</sub> = median<sub>2</sub>.
+        The alternative hypothesis H<sub>1</sub>
+      can be one of the following: median<sub>1</sub> &lt; median<sub>2</sub>,
+      median<sub>1</sub> &gt; median<sub>2</sub>, or
+      median<sub>1</sub> &ne; median<sub>2</sub>.
+  </p>
+  <p>
+      Let <i>n<sub>1</sub></i> be the size of sample 1 and
+      <i>n<sub>2</sub></i> be the size of sample 2.  The two samples are
+      combined into one and then ranked, with the smallest sample given rank 1,
+      second rank 2, etc.  If two or more samples are tied, their ranks are
+      averaged.  
+  </p>
+  <p>
+      The rank sums are calculated as follows:
+      <ul>
+          <li><i>R<sub>1</sub></i> = sum of ranks for sample 1</li>
+          <li><i>R<sub>2</sub></i> = sum or ranks for sample 2</li>
+          <li><i>R</i> = <i>R<sub>1</sub></i></li>
+      </ul>
+  </p>
+  <p>
+      Let <i>&mu;<sub>R</sub></i> and <i>&sigma;<sub>R</sub></i> 
+      be the mean and standard deviation or the sample R values that is expected
+      when the two populations have the same distribution, respectively:
+      <center>
+        <img src="mu_R.png">
+     </center>
+    <center>
+        <img src="sigma_R.png">
+    </center>
+  </p>
+  <p>
+      Using normal approximation, the test statistic is
+  </p>
+  <center>
+    <img src="z_R.png">
+  </center>
+  A continuity correction of +0.5 is used for a left-tailed test, and -0.5 is
+  used for a right-tailed and two-tailed test.
+  <p>
+      The p-value, where <i>z</i> is a
+      random variable representing the z-score is computed as follows:
+      <ul>
+      <li>Left-tailed test: <i>P(z &le; z<sub>R</sub>)</i> </li>
+      <li>Right-tailed test: <i>P(z &ge; z<sub>R</sub>)</i></li>
+      <li>Two-tailed test: <i>2P(z &ge; z<sub>R</sub>)</i>
+      if <i>z<sub>R</sub></i> > 0 or  <i>2P(z &le; z<sub>R</sub>)</i>
+      if <i>z<sub>R</sub></i> < 0</li>.
+      </ul>
+  </p>
+  <p>
+      To use the utility, follow these steps:
+  </p>
+  <ul>
+      
+  <li>For inputs,
+  select the names of the two sample columns in the corresponding drop-down menus.</li>
+    <li>Select the form of the alternative hypothesis in the
+    <b>Alternative Hypothesis:</b> drop-down menu.  </li>
+    <li>Provide the significance level of the test (between 0 and 1).</li>
+    <li>Click the <b>OK</b> button to perform the computation.  The 
+    results will be displayed in the log window.</li>
+  </ul>
+
+
+  </body>
+</html>

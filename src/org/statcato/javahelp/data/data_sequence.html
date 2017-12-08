@@ -1,0 +1,67 @@
+<!-- 
+    Document   : number_sequence
+    Created on : Apr 14, 2008, 2:07:12 PM
+    Author     : myau
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Manipulate Data > Generate Patterned Data > Arbitrary Data Sequence</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+      <h1>Manipulate Data > Generate Patterned Data > Arbitrary Data Sequence</h1>
+      <p>
+      This utility generates a arbitrary data sequence in a column.  The sequence
+      consists of repetitions of values and repetitions of the whole sequence itself.
+      Values in the sequence can be numbers or text values. 
+      To use this utility, you will specify the column for storing the sequence,
+      a data sequence, the number of times a value is repeated, and 
+      the number of times the whole sequence of values is repeated.  
+        </p>
+        
+        <ul>
+            <li>The utility can be accessed from 
+            <b>Data > Generate Patterned Data > Arbitrary Data Sequence</b>
+        </li>
+        <li><b>Store number pattern in:</b> The 
+            column names in which random samples will be stored, separated
+        by spaces (e.g. c1 c3 c7).  For a continuous range of columns, specify using
+        the first column, a dash, and the last column (e.g. C1-C30) </li>
+        <li><b>Arbitrary data sequence</b>: a sequence of values separated by 
+        white space;
+        for a text string with internal space characters, enclose text values
+        with double quotes("")</li>
+        <li><b>Number of times to list each number</b>: The number of times
+        each term appears in the sequence (sequentially)</li>
+        <li><b>Number of times to list each sequence</b>:   The number of times the
+        sequence, from the first to the last value, is repeated   
+        </ul>
+        
+        <p>
+            <h3>Example</h3>
+            Given the inputs (Data sequence: "this is" 1 2 a b, Number of times to list each number: 2, Number of times
+            to list each sequence: 2) produces the following sequence:<br>
+                this is<br>
+                    this is<br>
+                1<br>
+                    1<br>
+                    2<br>
+                        2<br>
+                        a<br>
+                            a<br>
+                            b<br>
+                                b<br>
+                this is<br>
+                    this is<br>
+                1<br>
+                    1<br>
+                    2<br>
+                        2<br>
+                        a<br>
+                            a<br>
+                            b<br>
+                                b<br>                                    
+        </p>
+  </body>
+</html>

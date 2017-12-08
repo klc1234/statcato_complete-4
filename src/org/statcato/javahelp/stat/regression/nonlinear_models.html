@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Statistics > Correlation and Regression > Non-Linear Models</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+      <h1>Statistics > Correlation and Regression > Non-Linear Models</h1>
+      <p>
+          This utility performs computations that fit a non-linear
+          mathematical regression model to two variables.       
+          To use this
+          utility, you must provide the values for an
+          independent/predictor variable
+           and a dependent/response variable in separate
+          columns.  
+      </p>
+      <p>
+          The following types of non-linear models are available:
+          <ul>
+              <li>Quadratic: y = ax<sup>2</sup> + bx + c</li>
+              <li>Cubic: y = ax<sup>3</sup> + bx<sup>2</sup> + cx + d</li>
+              <li>Polynomial: y = ax<sup>n</sup> + bx<sup>n-1</sup>
+              + cx<sup>n-2</sup> + ..., where <i>n</i> is a positive
+              integer</li>
+              <li>Logarithmic: y = a ln(x) + b</li>
+              <li>Power: y = ax<sup>b</sup></li>
+              <li>Fixed Power: y = ax<sup>n</sup>, where <i>n</i>
+              is a real number</li>
+              <li>Exponential: y = ab<sup>x</sup></li>
+          </ul>
+      </p>
+      <p>
+          where <i>y</i> is the independent variable 
+          and <i>x</i> is the dependent variable.
+    </p>
+
+<p>
+The non-linear regression problem is solved using least squares estimation.
+The problem is expressed as an inconsistent system, <b>A</b><i>x</i> =
+<i><b>b</b></i>, where <i>x</i> contains regression coefficients,
+<i><b>b</b></i> contains values of the dependent variables, and
+<b>A</b> contains values computed using the independent variables
+such that the chosen non-linear model is  represented
+equivalently by the inconsistent system.
+</p>
+
+<p>For variation, the following values are computed (
+<img src="y_bar.gif"> is the mean of the <i>y</i> variable values,
+<i>n</i> is the sample size, and <i>k</i> is the number 
+of regression coefficients):</p>
+<ul>
+    <li><b>Explained variation</b>: <img src="ssr.gif" align="middle"></li>
+    <li><b>Unexplained variation</b>: <img src="sse.gif" align="middle"></li>
+    <li><b>Total variation</b>: <img src="sst.gif" align="middle"></li>
+    <li><b>Coefficient of determination</b>: <img src="Rsquared.gif" align="middle"></li>
+    <li><b>Standard error of estimate</b>: <img src="standard_error_nonlin.gif" align="middle"></li>
+    <li><b>Test statistics F</b>: <img src="ts_F_nonlin.gif" align="middle"></li>
+    <li><b>p-Value</b> corresponding to the test statistics</li>
+</ul>
+
+<h3>Dialog Inputs</h3>
+<ul>
+    <li><b>Select x (independent/predictor variable):</b> 
+    Select the column containing the x values</li>
+    <li><b>Select y (dependent/response variable):</b> 
+    Select the column containing the y values (the number of x 
+    and y values must be the same)</li>
+    <li><b>Type of Model</b>:  Select desired type.</li>
+</ul>
+
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Statistics > Nonparametrics > Kruskal-Wallis Test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+      <p>
+      <h1>Statistics > Nonparametrics > Kruskal-Wallis Test</h1>
+      This utility performs calculations for the Krustal-Wallis Test,
+      which is a non-parametric test that uses ranks of sample data from three
+      or more independent populations to test the null hypothesis that
+      the independent samples come from populations with the same distribution.
+        The null hypothesis H<sub>0</sub> of a claim is that the samples
+        come from populations with the same distribution (the population
+        medians are all equal).
+        The alternative hypothesis H<sub>1</sub> is that the samples come
+        from populations with different distributions (the population
+        medians are not all equal).
+  </p>
+  <p>
+      Let <i>k</i> be the number of samples, and
+      <i>N</i> be the total number of observations in all <i>k</i> samples combined.
+
+      Let <i>n<sub>i</sub></i> be the size of sample <i>i</i>.
+      The <i>k</i> samples are
+      combined into one and then ranked, with the smallest sample given rank 1,
+      second rank 2, etc.  If two or more samples are tied, their ranks are
+      averaged.  Let <i>R<sub>i</sub></i> be the sum of ranks for sample <i>i</i>.
+  </p>
+  <p>
+      The test statistic is
+  </p>
+  <center>
+    <img src="kruskal_wallis_H.png">
+  </center>
+  <p>
+      The test uses an approximation by a Chi-square distribution with <i>k - 1</i>
+      degrees of freedom and computes the right-tailed p-value and critical value.
+  </p>
+  <p>
+      To use the utility, you must provide at least three samples, each with at least
+      five observations (if a sample of fewer than five observations is used,
+      a note indicating the presence of small samples will be shown).
+  </p>
+  <ul>
+      <li>To include a column in the analysis, select the column name is the
+    <b>Select the column to be included in the analysis:</b> list and click
+    the <b>Add to list</b> button.  The column will be added to the
+    <b>Responses</b> list.  To remove a column from the <b>Responses</b>
+    list, select it and click the <b>Remove from list</b> button.
+    </li>
+    <li>
+    Click the <b>Clear Input List</b> button to clear the input list.
+    </li>
+    <li>Provide the significance level of the test (between 0 and 1).</li>
+    <li>Click the <b>OK</b> button to perform the computation.  The 
+    results will be displayed in the log window.</li>
+  </ul>
+
+  </body>
+</html>

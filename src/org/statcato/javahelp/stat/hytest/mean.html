@@ -1,0 +1,138 @@
+<!-- 
+    Document   : mean
+    Created on : May 29, 2008, 9:30:34 AM
+    Author     : myau
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Statistics > Hypothesis Tests > 1-Population Mean</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+      <p>
+      <h1>Statistics > Hypothesis Tests > 1-Population Mean</h1>
+      This utility performs calculations for testing claims about a population
+      mean for the case population standard deviation &sigma; is known and
+      the case when &sigma; is unknown.  The population is assumed to be
+      normally distributed.  The null hypothesis of a claim about a
+      population mean &mu; is &mu = &mu<sub>0</sub>.  The alternative
+      hypothesis can be one of the following: &mu &lt; &mu<sub>0</sub>,
+      &mu &gt; &mu<sub>0</sub>, or &mu; &ne; &mu<sub>0</sub>.
+  </p>
+  <p>
+      When &sigma; is known, the standard normal distribution is used to
+      calculate p-Values and critical values.  The test statistic is computed
+      using the following formula:
+  </p>
+  <center>
+      <img src="z_mean.gif">
+  </center>
+  <p>
+      where <img src="xbar.gif"> is the sample mean, &mu;
+      is the hypothesized population mean, and <i>n</i> is the sample size.
+  </p>
+  <p>
+      When &sigma; is unknown, the Student's t distribution with degrees of
+      freedom <i>n - 1</i>, where <i>n</i> is the sample size, is used to 
+      compute p-Values and critical values.  The test statistic is computed
+      as follows:
+  </p>
+  <center>
+    <img src="t_mean.gif">
+  </center>
+  <p>
+      where <i>s</i> is the sample standard deviation.
+  </p>
+  <p>
+      To use the utility, follow these steps:
+  </p>
+  <ul>
+      <li><b>Population standard deviation:</b> Select the <b>Known</b>
+      radio button if the population standard deviation is known and
+      enter the standard deviation in the provided text field.  If it is
+  unknown, select the <b>Unknown</b> radio button.</li>
+  <li>If individual samples are entered in a single column of the 
+  Datasheet, select the <b>Samples in column:</b> radio button, and
+  select the column name in the drop-down menu.</li>
+  <li>To use summary statistics of the sample data, select the 
+  <b>Summarized sample data:</b> radio button, and input the sample size,
+mean, and standard deviation in the provided text fields.</li>
+    <li>Enter the significance or confidence level (between 0 and 1).</li>
+    <li>Select the form of the alternative hypothesis in the
+    <b>Alternative Hypothesis:</b> drop-down menu.  Enter the 
+    hypothesized population mean in the provided text box.</li>
+    <li>Click the <b>OK</b> button to perform the computation.  The 
+    results will be displayed in the log window.</li>
+  </ul>
+  
+  <h3>Sample Outputs</h3>
+  <p>
+      The null hypothesis and the alternative hypothesis are displayed.
+      The results, along with the input parameters, are displayed in a table.
+      <br>
+      [N = sample size; Sample Mean = calculated from the individual samples
+      or provided directly by the user; Stdev = s for sample standard
+      deviation, or &sigma; for population standard deviation; 
+      Significance Level = 1 - confidence level; Critical Value = 
+      critical value corresponding to the significance level; 
+      Test Statistic = test statistic corresponding to the hypothesized mean; 
+      p-Value = p-Value corresponding to the test statistic]
+  </p>
+  <br><br>
+<font face="courier">  
+Hypothesis Test - One Population Mean: confidence level = 0.95 <br>
+Input: C1 <br>
+σ unknown <br>
+Null hypothesis: μ = 98.6<br>
+Alternative hypothesis: μ &lt; 98.6  <br>
+    <table border="1">
+<tr>       
+<td>N</td>
+<td>Sample Mean</td>
+<td>Stdev s</td>
+<td>Significance Level</td>
+<td>Critical Value</td>
+<td>Test Statistic</td>
+<td>p-Value</td>
+<tr>
+<td>12</td>
+<td>98.392</td>
+<td>0.535</td>
+<td>0.05</td>
+<td>-1.796</td>
+<td>-1.349</td>
+<td>0.1023</td>
+</tr>
+</table>
+<br>
+ Hypothesis Test - One Population Mean: confidence level = 0.95 <br>
+Input: C1 <br>
+    σ known <br>
+        Assumed population standard deviation σ = 0.62 <br>
+            Null hypothesis: μ = 98.6 <br>
+                Alternative hypothesis: μ &ne; 98.6  <br>
+<table border="1">
+<tr>                    
+<td>N</td>
+<td>Sample Mean</td>
+<td>Stdev σ</td>
+<td>Significance Level</td>
+<td>Critical Value</td>
+<td>Test Statistic</td>
+<td>p-Value</td>
+</tr>
+<tr>
+<td>12</td>
+<td>98.392</td>
+<td>0.620</td>
+<td>0.05</td>
+<td>1.960</td>
+<td>-1.164</td>
+<td>0.2444</td>
+</tr>
+</table>
+</font>
+
+  </body>
+</html>

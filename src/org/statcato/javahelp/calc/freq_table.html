@@ -1,0 +1,51 @@
+<!-- 
+    Document   : freq_table
+    Created on : Aug 4, 2008, 10:50:12 AM
+    Author     : myau
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Calculate > Frequency Table</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+      <h1>Calculate > Frequency Table</h1>
+      <p>
+          This utility computes the frequencies of data belonging to 
+          different categories or classes.  You must provide the data 
+          (category names or numbers) to be counted in
+          a column.  If the data is numerical, you must provide the 
+          upper limits of the classes for which frequencies are computed.
+          The categories/classes and their corresponding frequencies are 
+          computed and stored in columns specified by the user.
+      </p>
+      <h3>Dialog Inputs</h3>
+      <ul>
+          <li><b>Source Data:</b>  Select the column containing input data 
+          in the <b>Compute frequency data for column:</b> drop-down menu.</li>
+          <li><b>Methods of Computing Frequencies:</b>  Choose one of the following:
+          <ul>
+              <li>Treat source data as categories.  Count the frequency 
+              of each category.</li>
+              <li>Source data contains numerical data.  Count the frequency
+              of each class, where the upper class limits are provided
+              (you must select the column containing the upper class limits
+              in the corresponding drop-down menu).</li>
+              <li>Source data contains numerical data.  Count the frequency
+              of each class, where the classes are defined by the first 
+              upper class limit and the class width.  The number of
+              classes can also be provided; if it is not provided, 
+              the number of classes is the smallest number such that 
+              all samples can be classified.</li>
+              <li>Source data
+              contains numerical data.  Automatically use 10 classes,
+              with the first lower class limit decided by the minimum value.
+              The class width is (maximum value - minimum value) / 10.</li>
+          </ul>
+          <li><b>Store Frequency Table in:</b>  Enter the column name 
+          (e.g. C1) or variable name for storing the categories and frequencies.
+          </li>
+      </ul>
+  </body>
+</html>

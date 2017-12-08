@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Statistics > Nonparametrics > Wilcoxon Signed Rank Test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+      <p>
+      <h1>Statistics > Nonparametrics > Wilcoxon Signed Rank Test</h1>
+      This utility performs calculations for the Wilcoxon Signed Rank Test,
+      which is a non-parametric hypothesis test for the median of a single
+      sample or of two samples of matched pairs.
+        The null hypothesis H<sub>0</sub> of a claim is median = median<sub>0</sub>,
+        where median<sub>0</sub> is the hypothesized median.
+        The alternative
+      hypothesis H<sub>1</sub>
+      can be one of the following: median &lt; median<sub>0</sub>,
+      median &gt; median<sub>0</sub>, or median &ne; median<sub>0</sub>.
+  </p>
+  <p>
+      Let <i>x</i> be a value in a single sample or the difference of matched
+      pairs in two samples.  
+      For each value of <i>x</i>, the absolute value
+      of the difference between
+      <i>x</i> and the hypothesized median <i>median<sub>0</sub></i> is computed.
+      Differences of 0 are discarded.
+      Let <i>n</i> be the number of nonzero differences.
+      Ranks from 1 to <i>n</i> are then assigned to each <i>x</i> based on
+      the ascending order of the differences.  Mean of ranks are assigned to
+      tied values.
+      A negative (-) sign is assigned
+      to a rank if its corresponding <i>x</i> is below <i>median<sub>0</sub></i> ,
+      and a positive (+) sign is assigned if <i>x</i> is above <i>median<sub>0</sub></i>.
+  </p>
+  <p>
+      The rank sums are calculated as follows:
+      <ul>
+          <li>Left-tailed (H<sub>1</sub>: median &lt; median<sub>0</sub>):
+          R<sub>(+)</sub> = the sum of ranks with positive (+) signs</li>
+          <li>Right-tailed (H<sub>1</sub>: median &gt; median<sub>0</sub>):
+          R<sub>(-)</sub> = the sum of ranks with negative (-) signs</li>
+          <li>Two-tailed (H<sub>1</sub>: median &ne; median<sub>0</sub>):
+          R<sub>(+-)</sub> = the minimum of R<sub>(+)</sub>  and R<sub>(-)</sub>
+      </ul>
+  </p>
+  <p>
+      If <i>n</i> is less than or equal to 30, the exact p-value and critical
+      value for the rank sum is calculated.  The test statistic <i>R</i> is the rank
+      sum corresponding to the type of test described above.  The p-value for
+      a one-tailed test (left-tailed or right-tailed) is
+      <i>P(X &le; R)</i> where <i>X</i> is a random variable representing the
+      rank sum.  The p-value for a two-tailed test is
+      <i>2P(X &le; s)</i>.
+  </p>
+  <p>
+      If <i>n</i> is greater than 30, normal approximation
+      is used.  The test statistic is
+  </p>
+  <center>
+    <img src="wilcoxon_normal_approx.png">
+  </center>
+  <p>
+      The p-value for a one-tailed test (left-tailed or right-tailed) is
+      <i>P(z &le; z<sub>w</sub>)</i> where <i>z</i> is a
+      random variable representing the z-score.  The p-value for a two-tailed test is
+      <i>2P(z &le; z<sub>w</sub>)</i>.
+  </p>
+  <p>
+      To use the utility, follow these steps:
+  </p>
+  <ul>
+      <li>If one sample of values
+      are provided in a single column, select the <b>One Sample</b> radio button
+      and the column name in the corresponding drop-down menu.</li>
+  <li>If matched pairs of two samples are provided in two columns, select the
+  <b>Two Samples (Matched Pairs)</b> radio button, and
+  select the column names in the corresponding drop-down menus.</li>
+    <li>Select the form of the alternative hypothesis in the
+    <b>Alternative Hypothesis:</b> drop-down menu.  Enter the 
+    hypothesized population median in the provided text box.</li>
+    <li>Provide the significance level of the test (between 0 and 1).</li>
+    <li>Click the <b>OK</b> button to perform the computation.  The 
+    results will be displayed in the log window.</li>
+  </ul>
+
+
+  </body>
+</html>

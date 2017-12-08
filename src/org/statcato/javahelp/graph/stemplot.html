@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Graph > Stem-and-Leaf Plot</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+      <h1>Graph > Stem-and-Leaf Plot</h1>
+      <p>
+      A stem-and-leaf plot divides each data value into a stem and a leaf
+      and shows the leaves corresponding to each distinct stem in the data
+      set in a tabular fashion.  Like a histogram, the frequency of 
+      each category (each stem in a stem-and-leaf plot) can be easily seen.
+      However, unlike a histogram, the individual data value can be 
+      retrieved from the plot by combining each stem with its corresponding 
+      leaves.  For example, for the values {1.5, 2.3, 4.5, 4.8, 6.5, 8.5, 8.8, 9.5},
+      the stem-and-leaf plot is<br>
+      <table border="1">
+        <tr><td align="right">Stem</td><td>Leaves</td></tr>
+        <tr><td align="right">1</td><td>5</td></tr>
+        <tr><td align="right">2</td><td>3</td></tr>
+        <tr><td align="right">3</td><td>&nbsp;</td></tr>
+        <tr><td align="right">4</td><td>58</td></tr>
+        <tr><td align="right">5</td><td>&nbsp;</td></tr>
+        <tr><td align="right">6</td><td>5</td></tr>
+        <tr><td align="right">7</td><td>&nbsp;</td></tr>
+        <tr><td align="right">8</td><td>58</td></tr>
+        <tr><td align="right">9</td><td>5</td></tr>
+        </table>
+        </p>
+        <p>
+        In this plot, the unit of each leaf is 0.1.  The individual data value 
+        can be found by appending the stem to each of its leaf.
+        Stems with no leaves are inserted between 
+        the first and the last stem so that
+        all stems are evenly spaced.
+    </p>
+  <p>
+      The stem-and-leaf graph utility allows the user to specify a number of
+      graph variables and an optional variable that groups the data into
+      a number of categories.
+      It also provides the options of specifying the leaf unit, whether
+      the outliers should be excluded, and whether the stems with no leaves
+      should be displayed.  The leaf unit must be equal to 10<sup><i>x</i></sup>
+      where <i>x</i> is an integer.  Outliers are those that fall outside of 
+      the interval [first quartile - 1.5 * IQR, third quartile + 1.5 * IQR],
+      where IQR is the interquartile range.
+  </p>
+  
+   <h2>Dialog Inputs</h2>
+   <ul>
+      <li>To open the stem-and-leaf utility, select 
+      <b>Graph > Stem-and-Leaf Plot</b>.</li>
+      <li>Select the columns containing data values under <b>Graph Variables</b> list.  
+      Control-click to select multiple variables.
+      A separate plot is 
+      created for each column of values if no Group-by variable is selected
+      (see next item).</li>
+      <li>If the data values have their corresponding category labels in 
+      a separate column, select the column of the category labels in
+        the <b>Group By Categories in</b> drop-down menu.  A separate plot
+        is created for data values belonging to each category label.</li>
+        <li>[optional] Enter the <b>leaf unit</b> 
+        (must be equal to 10<sup><i>x</i></sup>,
+        where <i>x</i> is an integer).  If the leaf unit is not specified,
+        it will be determined by the following method: A leaf unit for 
+        a data value is the place to the right of the first non-zero
+        digit of the value (<i>e.g.</i>The leaf unit of 141 is 10, and 
+        the leaf unit of 0.023 is 0.001).  The leaf unit for a set of data values is
+        the maximum of the leaf units of the individual data values.</li>
+    <li>Select the <b>Exclude outliers</b> checkbox to exclude the outliers
+    from the plot.</li>
+    <li>Select the <b>Display stems that have no leaves</b> checkbox to 
+    display the stems with no leaves.</li>
+    <li>Click <b>OK</b> to create the stem-and-leaf plot.  The plot will be
+    displayed in the log window.</li>
+    </ul>
+    
+  </body>
+</html>

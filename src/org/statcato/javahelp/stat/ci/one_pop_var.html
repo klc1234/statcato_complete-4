@@ -1,0 +1,70 @@
+<!-- 
+    Document   : one_pop_mean
+    Created on : May 21, 2008, 1:15:08 PM
+    Author     : myau
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Statistics > Confidence Intervals > 1-Population Variance</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+      <h1>Statistics > Confidence Intervals > 1-Population Variance</h1>
+      <p>
+          This utility computes the confidence intervals for a population variance
+          in one population.  The confidnece
+          intervals are calculated using the following formula:
+          
+      </p>
+      <p>
+      <center>
+          <img src="ci_var.gif"> where  <br><br>
+
+            n = sample size<br>
+                s = sample standard deviation<br>
+                &sigma<sup>2</sup> = variance<br>     
+            <img src="chi2_L.gif"> = inverse cumulative 
+                          probability of the Chi-square distribution at 
+                          &alpha;/2.<br>
+                              <img src="chi2_R.gif"> = inverse cumulative 
+                          probability of the Chi-square distribution at 
+                          1 - &alpha;/2.
+  </center>
+</p>
+<br><br>
+      To use the utility, select <b>Statistics &gt; Confidence Intervals &gt; 
+      1-Population Variance</b>.
+      <ul>
+          <li>You can provide sample data in a column of the Datasheet or provide
+          summary data.  To provde sample data in a column, select
+          the <b>Samples in column:</b> radio button, and select the column
+      name in the given drop-down menu.</li>
+        <li>If individual sample data is not available,  you can provide summary
+        information of the sample data.  In this case, select the <b>Summarized
+        sample data</b> radio button.  Enter sample size and either sample variance
+        or sample standard deviation in the provided text boxes.</li>
+        <li>Enter the confidence level (between 0 and 1) in the <b>
+        Confidence level:</b> text box.</li>
+        <li>Click <b>OK</b> to compute the confidence interval.  The results
+        will be shown in the log window.</li>
+      </ul>
+      <p>
+      The sample size, variance, and standard deviation are displayed, 
+      along with the resulting confidence interval for variance and 
+      standard deviation.
+      Here is an example:<br><br>
+      
+      <font face="courier">
+Confidence Interval - One population variance: confidence level = 0.95 <br>
+Input: Summary data  <br><br>
+<table border="1">
+<tr><td>N</td><td>Variance</td><td>Stdev</td><td>95.00%CI Variance</td><td>95.00%CI Stdev</td></tr>
+<tr><td>100</td><td>10.000</td><td>3.162</td><td>(7.7090, 13.4949)</td><td>(2.7765, 3.6735)</td></tr>
+</table>
+
+</font>
+
+      </p>
+  </body>
+</html>

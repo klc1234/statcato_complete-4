@@ -1,0 +1,76 @@
+<!-- 
+    Document   : Normal Quantile Plot
+    Created on : July 22, 2008
+    Author     : myau
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Statistics > Basic Statistics > Normality Test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+      <h1>Statistics > Basic Statistics > Normality Test</h1>
+      
+  <p>
+      The normality test utility performs the Ryan-Joiner normality
+      test and creates a normal quantile plot for a set of sample 
+      data values.
+      The Ryan-Joiner normality test computes a correlation coefficient
+      and critical value used to test the claim that a population is
+      normally distributed.  The null hypothesis of the test is that
+      the population is normal.  The test statistic is the correlation 
+      coefficient <i>r</i>:
+  </p>
+  <p><center><img src="ryan-joiner-ts.gif"></center></p>
+    <p>
+        where <i>x</i> and <i>y</i> are the ordered observations and
+        their normal scores, respectively.  The normal scores
+        for the ordered observations
+        are the inverse cumulative normal probabilities for 
+        <i>(i+1)/(n+1)</i>, where <i>n</i> is the sample size
+        and <i>i=0...n-1</i>.
+  </p>
+  <p>
+      The critical values for significance level &alpha; = 0.10, 0.05, and 0.01
+      are approximated as follows:
+      <p><center><img src="ryan-joiner-cv1.gif"></center></p>
+      <p><center><img src="ryan-joiner-cv2.gif"></center></p>
+      <p><center><img src="ryan-joiner-cv3.gif"></center></p>
+  </p>
+  <p>
+      If the test statistic <i>r</i> is less than the critical value, reject
+      the null hypothesis that the population is normal; 
+      otherwise, fail to reject the null hypothesis.
+  </p>
+  <p>
+      This utility allows the user to specify 
+      a column containing the sample data values.    
+      The user can select the significance level used for the 
+      Ryan-Joiner normality test.  
+      It also provides the option of generating a normal quantile plot 
+      (along with the options of having a plot title, axis labels, 
+      a regression line, and whether
+      the data values should be used as x or y coordinates).
+  </p>
+  <ul>
+      <li>To open the utility, select 
+      <b>Statistics > Basic Statistics > Normality Test</b>.</li>
+      <li>Select the column containing the data values in 
+    the <b>Input Variable</b> drop-down menu.</li>   
+    <li>Select the <b>significance level</b> used in the Ryan-Joiner
+    normality test.</li>
+    <li>Select the <b>Generate normal quantile plot</b> check box
+    if a normal quantile plot for the input data should be displayed.</li>
+    <ul>
+    <li>Enter the plot title in the <b>Plot Title:</b> text field.</li>
+    <li>Enter labels for the x and y axis in the corresponding text fields.</li>
+    <li>Select the <b>Show regression line</b> check box to show a best-fit line
+    to the points on the plot.</li>
+</ul>
+    <li>Click <b>OK</b>.  The results of the Ryan-Joiner
+    normality test will be displayed in the log window.</li>
+  </ul>
+    
+  </body>
+</html>

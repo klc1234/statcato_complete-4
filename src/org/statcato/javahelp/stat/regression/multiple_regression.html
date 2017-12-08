@@ -1,0 +1,72 @@
+<!-- 
+    Document   : index
+    Created on : Jul 9, 2008, 11:26:57 AM
+    Author     : myau
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Statistics > Correlation and Regression > Multiple Regression</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+      <h1>Statistics > Correlation and Regression > Multiple Regression</h1>
+      <p>
+          This utility performs computations that determine the 
+          linear regression between multiple variables.       
+          To use this
+          utility, you must provide the values for at least one
+          independent/predictor
+          variables and a dependent/response in separate 
+          columns.  
+      </p>    
+      <p>The multiple regression equation is </p>
+      <p><center><img src="multiple_reg_eq.gif"></center></p>
+      <p>
+      where <img src="y_bold.gif"> is the independent variable with <i>n</i>
+      sample values and <img src="x_bold.gif"> are the dependent variables, each 
+      of which also has <i>n</i> sample values.  The regression coefficients 
+      <img src="reg_coeff.gif"> are determined by least squares estimation.
+  </p>
+
+<p>For variation, the following values are computed (
+<img src="y_bar.gif"> is the mean of the <i>y</i> variable values, 
+<img src="y_hat.gif"> is the <i>y</i> value predicted by the regression
+equation):</p>
+<ul>
+    <li><b>Explained variation</b>: <img src="explained_var.gif"></li>
+    <li><b>Unexplained variation</b>: <img src="unexplained_var.gif"></li>
+    <li><b>Total variation</b>: <img src="total_var.gif"></li>
+    <li><b>Coefficient of determination</b>: <img src="coeff_det.gif"></li>
+    <li><b>Adjusted coefficient of determination</b>: <img src="adj_coeff_det.gif"></li>
+    <li><b>Standard error of estimate</b>: <img src="standard_error_multiple.gif"></li>
+    <li><b>Test statistics F</b>: <img src="ts_F.gif"></li>
+    <li><b>p-Value</b> corresponding to the test statistics
+    (P(x > the test statistics in
+    the F distribution with
+numerator degrees of freedom <i>k</i> and denominator degrees of freedom
+<i>n-k-1</i>))</li>
+</ul>
+
+<h3>Dialog Inputs</h3>
+<h4>Independent Variables</h4>
+<p>
+Select an independent variable under the 
+<b>Select the column containing an independent variable</b> list.
+Click the <b>Add to list</b> button to add the column to the list of 
+independent variables.  To remove a variable from the list,
+select the variable name and click the <b>Remove from list</b> button.
+Ctrl-click or shift-click to select multiple columns.
+Click the <b>Clear Input List</b> button to clear the input list.
+</p>
+<h4>Dependent Variable</h4>
+<p>
+Select the dependent variable under the 
+<b>Select the column containing the dependent variable</b> drop-down menu.
+</p>
+
+<p>
+Click OK to perform the computation.  The results will be displayed in the 
+log window.
+  </body>
+</html>

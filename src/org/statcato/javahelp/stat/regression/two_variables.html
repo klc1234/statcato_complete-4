@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Statistics > Correlation and Regression > Linear Two Variables</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+      <h1>Statistics > Correlation and Regression > Linear Two Variables</h1>
+      <p>
+          This utility performs computations that determine the 
+          correlation and regression between two variables.       
+          To use this
+          utility, you must provide the paired x (independent/predictor) 
+          and y (dependent/response) values in separate 
+          columns.  You must also provide the significance level for 
+          the hypothesis test for correlation.
+      </p>    
+      <p>For correlation, the following values are computed:</p>
+      <ul>
+          <li><b>Linear correlation coefficient</b>: 
+            <img src="correlation_coefficient.gif">
+          <li><b>Test statistic</b>: 
+            <img src="correlation_ts_t.gif">
+          </li>
+          <li><b>Critical values</b> <img src="cv_r.gif">, where <i>t</i> 
+          is the inverse probability distribution of (1 - significance / 2)
+          in the Student's t distribution with <i>n - 2</i>
+          degress of freedom</li>
+          <li><b>p-Value</b> of the test statistic <i>r</i></li>
+      </ul>
+      <p>For regression equation <i>Y = b<sub>0</sub> + b<sub>1</sub> x</i>,
+      the y-intercept <i>b<sub>0</sub></i> and the slope 
+      <i>b<sub>1</sub></i> are calculated as follows:
+      </p>
+      <p><center><img src="b0.gif"></center></p>
+      <p><center><img src="b1.gif"></center></p>
+      <p>The null hypothesis H<sub>0</sub> for a hypothesis test for 
+      linear correlation is that there is no linear
+      correlation (&rho; = 0), and the alternative hypothesis H<sub>1</sub>
+      is that there
+      is a linear correlation (&rho; &ne; 0).</p>
+<p>For variation, the following values are computed (
+<img src="y_bar.gif"> is the mean of the <i>y</i> variable values, 
+<img src="y_hat.gif"> is the <i>y</i> value predicted by the regression
+equation):</p>
+<ul>
+    <li><b>Explained variation</b>: <img src="explained_var.gif"></li>
+    <li><b>Unexplained variation</b>: <img src="unexplained_var.gif"></li>
+    <li><b>Total variation</b>: <img src="total_var.gif"></li>
+    <li><b>Coefficient of determination</b>: <img src="coeff_det.gif"></li>
+    <li><b>Standard error of estimate</b>: <img src="standard_error.gif"></li>
+</ul>
+
+<h3>Dialog Inputs</h3>
+<ul>
+    <li>In the <b>Independent/dependent variable series</b> list, select the columns
+    containing data values for the input variables.  The x variable is
+    the independent variable, and the y variable is the dependent
+    variable.  Click <b>Clear Input List</b> to clear the input columns list.</li>
+    <li><b>Significance level</b>:  Enter the significance level of 
+    the hypothesis test for correlation.</li>
+    <li>Select the <b>Show a scatterplot for all pairs of data values</b> 
+    check box to display a scatter plot showing
+    data values in each pair of input variables.  Use the provided options to
+    customize the scatterplot.</li>
+    <li>The residual plots options are discussed in the 
+        <a href="../../graph/residual.html">Residual Plot</a> section.</li>
+</ul>
+
+  </body>
+</html>

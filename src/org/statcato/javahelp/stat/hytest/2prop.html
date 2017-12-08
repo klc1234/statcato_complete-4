@@ -1,0 +1,91 @@
+<!-- 
+    Document   : 2prop
+    Created on : Jun 9, 2008, 3:48:11 PM
+    Author     : myau
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Statistics > Hypothesis Tests > 2-Population Proportions</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+      <h1>Statistics > Hypothesis Tests > 2-Population Proportions</h1>
+      <p>
+      This utility performs calculations for testing claims about the
+      difference of two population
+      proportions.  A normal distribution is used for approximation.  
+      The null hypothesis of a claim about the
+      difference of two 
+      population proportions <i>p<sub>1</sub> and p<sub>2</sub></i> 
+      is <i>p<sub>1</sub> = p<sub>2</sub></i>.  The alternative
+      hypothesis can be one of the following: <i>p<sub>1</sub> &lt; 
+      p<sub>2</sub></i>,
+      <i>p<sub>1</sub> &gt; p<sub>2</sub></i>, or <i>p<sub>1</sub> 
+      &ne; p<sub>2</sub></i>.
+        </p>
+  
+       <p>
+           The user has the option of using a pooled estimate of 
+           the sample proportions <i>p<sub>1</sub> = x<sub>1</sub> / n<sub>1</sub>
+           and p<sub>2</sub> = x<sub>2</sub> / n<sub>2</sub></i>.  The pooled
+           esimate is given by:
+       </p>
+       <p>
+           <center><img src="poolEstimate.gif"></center>
+       </p>
+       <p>
+           The test statistics <i>z</i>, calculated using the pooled estimate is:
+       </p>
+       <p>
+           <center><img src="z_2prop_pooled.gif"></center>
+       </p>
+        <p>
+      where <img src="pHat.gif"> is the sample proportion, <i>p</i>
+      is the hypothesized population proportion,  
+      and <i>n</i> is the sample size.
+        </p>
+        <p>
+            The test statistics calculated without using the pooled estimate
+            is given by:
+        </p>
+        <p>
+            <center><img src="z_2prop.gif"></center>
+        </p>
+
+      <h3>Dialog Inputs</h3>
+      <p>
+          The sample data of the population must be of only two categories.
+          They can be provided in one of three ways:
+          <ul>
+              <li><b>Samples in one column</b>: The population labels
+              of samples are in one column of the Datasheet, 
+              and the individual samples
+              are in another column.</li>
+              <li><b>Samples in two columns</b>: The samples of the two
+              population are in two separate columns.</li>
+              <li><b>Summarized sample data:</b> The number of events
+              and the number of trials of each of the two populations
+              are provided (instead of individual sample values).</li>
+          </ul>
+      </p>
+      <p>
+          The <b>Significance Level</b> or
+          <b>Confidence Level</b> must be between 0 and 1.  For example,
+          enter 0.95 for a 95% confidence level.
+      </p>
+      <p>
+          The <b>Alternative Hypothesis</b> can be one of the following forms:
+          <b>Less than</b> (<i>p<sub>1</sub> &lt; 
+          p<sub>2</sub></i>), <b>Not Equal to</b> (<i>p<sub>1</sub> 
+          &ne; p<sub>2</sub></i>), or <b>Greater than</b>
+      (<i>p<sub>1</sub> &gt; p<sub>2</sub></i>).  Enter the <b>Hypothesized
+      Proportion Difference</b> (<i>p<sub>1</sub> - p<sub>2</sub></i>) in
+      the provided text box.
+      </p>
+      <p>
+          Select the <b>Use pooled estimate</b> check box if the pooled
+          estimate is appropriate for combining the samples.
+      </p>
+  </body>
+</html>

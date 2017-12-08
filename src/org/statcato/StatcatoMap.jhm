@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE map
+  PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Map Version 1.0//EN"
+          "http://java.sun.com/products/javahelp/map_1_0.dtd">
+
+<map version="2.0">
+
+<!-- Topics -->
+
+    <mapID target="overview" url="javahelp/index.html" />
+    <mapID target="reference" url="javahelp/references.html" />
+    <mapID target="license" url="javahelp/license.html" />
+
+   <!-- introduction -->
+   <mapID target="intro" url="javahelp/introduction/index.html" />
+   <mapID target="intro-getting-started" url="javahelp/introduction/getting_started.html" />
+   <mapID target="intro-toolbar" url="javahelp/introduction/toolbar.html" />
+   <mapID target="intro-shortcuts" url="javahelp/introduction/shortcuts.html" />
+
+    <!-- windows -->
+    <mapID target="windows" url="javahelp/windows/index.html" />
+    <mapID target="windows-datasheet" url="javahelp/windows/datasheet.html" />
+	<mapID target="windows-history" url="javahelp/windows/history.html" />
+	<mapID target="windows-log" url="javahelp/windows/log.html" />
+	<mapID target="windows-menu" url="javahelp/windows/menu.html" />
+
+    <!-- file -->
+    <mapID target="file" url="javahelp/file/index.html" />
+    <mapID target="file-menu" url="javahelp/file/files.html" />
+    <mapID target="file-options" url="javahelp/file/options.html" />
+    <mapID target="file-auto-save" url="javahelp/file/autosave.html"/>
+
+    <!-- edit -->
+    <mapID target="edit" url="javahelp/edit/index.html" />
+    <mapID target="edit-menu" url="javahelp/edit/menu.html" />
+
+    <!-- data -->
+    <mapID target="data" url="javahelp/data/index.html" />
+    <mapID target="data-sort" url="javahelp/data/sort.html" />
+    <mapID target="data-rank" url="javahelp/data/rank.html" />
+    <mapID target="data-transpose" url="javahelp/data/transpose.html" />
+    <mapID target="data-display-data" url="javahelp/data/display.html" />
+    <mapID target="data-standardize" url="javahelp/data/standardize.html" />
+    <mapID target="data-pattern" url="javahelp/data/pattern.html" />
+    <mapID target="data-number-sequence" url="javahelp/data/number_sequence.html" />
+    <mapID target="data-data-sequence" url="javahelp/data/data_sequence.html" />
+    <mapID target="data-random" url="javahelp/data/random.html" />
+    <mapID target="data-random-binomial" url="javahelp/data/binomial.html" />
+    <mapID target="data-random-integer" url="javahelp/data/integer.html" />
+    <mapID target="data-random-normal" url="javahelp/data/normal.html" />
+    <mapID target="data-random-uniform" url="javahelp/data/uniform.html" />
+    <mapID target="data-random-random-user" url="javahelp/data/samples_from_column.html" />
+
+    <!-- calc -->
+    <mapID target="calc" url="javahelp/calc/index.html" />
+    <mapID target="calc-calculator" url="javahelp/calc/calculator.html" />
+    <mapID target="calc-prob" url="javahelp/calc/probability_distribution.html" />
+    <mapID target="calc-normal" url="javahelp/calc/normal_dist.html" />
+    <mapID target="calc-student" url="javahelp/calc/t_dist.html" />
+    <mapID target="calc-chisquare" url="javahelp/calc/chisquare_dist.html" />
+    <mapID target="calc-f" url="javahelp/calc/f_dist.html" />
+    <mapID target="calc-exponential" url="javahelp/calc/exponential_dist.html" />
+    <mapID target="calc-uniform" url="javahelp/calc/uniform_dist.html" />
+    <mapID target="calc-binomial" url="javahelp/calc/binomial_dist.html" />
+    <mapID target="calc-discrete" url="javahelp/calc/discrete_dist.html" />
+    <mapID target="calc-geometric" url="javahelp/calc/geometric_dist.html" />
+    <mapID target="calc-integer" url="javahelp/calc/integer_dist.html" />
+    <mapID target="calc-poisson" url="javahelp/calc/poisson_dist.html" />
+    <mapID target="calc-pvalue" url="javahelp/calc/pvalue.html" />
+    <mapID target="calc-freqtable" url="javahelp/calc/freq_table.html" />
+
+    <!-- stat -->
+    <mapID target="stat" url="javahelp/stat/index.html" />
+    <mapID target="stat-basic" url="javahelp/stat/basic/index.html" />
+    <mapID target="stat-basic-descriptive" url="javahelp/stat/basic/descriptive_statistics.html" />
+    <mapID target="stat-basic-column" url="javahelp/stat/basic/column_statistics.html" />
+    <mapID target="stat-basic-row" url="javahelp/stat/basic/row_statistics.html" />
+    <mapID target="stat-basic-normality" url="javahelp/stat/basic/normality_test.html" />
+    <mapID target="stat-sample-size" url="javahelp/stat/sample_size/index.html" />
+    <mapID target="stat-sample-size-mean" url="javahelp/stat/sample_size/mean.html" />
+    <mapID target="stat-sample-size-prop" url="javahelp/stat/sample_size/prop.html" />
+    <mapID target="stat-ci" url="javahelp/stat/ci/index.html" />
+    <mapID target="stat-ci-1mean" url="javahelp/stat/ci/one_pop_mean.html" />
+    <mapID target="stat-ci-1prop" url="javahelp/stat/ci/one_pop_prop.html" />
+    <mapID target="stat-ci-1var" url="javahelp/stat/ci/one_pop_var.html" />
+    <mapID target="stat-ci-2mean" url="javahelp/stat/ci/two_pop_mean.html" />
+    <mapID target="stat-ci-2prop" url="javahelp/stat/ci/two_pop_prop.html" />
+    <mapID target="stat-ci-2var" url="javahelp/stat/ci/two_pop_var.html" />
+    <mapID target="stat-ci-matched" url="javahelp/stat/ci/matched_pairs.html" />
+    <mapID target="stat-hytest" url="javahelp/stat/hytest/index.html" />
+    <mapID target="stat-hytest-mean" url="javahelp/stat/hytest/mean.html" />
+    <mapID target="stat-hytest-prop" url="javahelp/stat/hytest/prop.html" />
+    <mapID target="stat-hytest-var" url="javahelp/stat/hytest/variance.html" />
+    <mapID target="stat-hytest-2mean" url="javahelp/stat/hytest/2mean.html" />
+    <mapID target="stat-hytest-2prop" url="javahelp/stat/hytest/2prop.html" />
+    <mapID target="stat-hytest-2var" url="javahelp/stat/hytest/2var.html" />
+    <mapID target="stat-hytest-matched" url="javahelp/stat/hytest/matched_pairs.html" />
+    <mapID target="stat-hytest-conc" url="javahelp/stat/hytest/hytest_conclusion.html" />
+    <mapID target="stat-reg" url="javahelp/stat/regression/index.html" />
+    <mapID target="stat-reg-two-variables" url="javahelp/stat/regression/two_variables.html" />
+    <mapID target="stat-reg-two-variables-all-pairs" url="javahelp/stat/regression/correlation_matrix.html" />
+    <mapID target="stat-reg-multiple-regression" url="javahelp/stat/regression/multiple_regression.html" />
+    <mapID target="stat-reg-nonlinear" url="javahelp/stat/regression/nonlinear_models.html" />
+    <mapID target="stat-multi" url="javahelp/stat/multinomial/index.html" />
+    <mapID target="stat-multi-goodness" url="javahelp/stat/multinomial/goodness_of_fit.html" />
+    <mapID target="stat-multi-contingency_table" url="javahelp/stat/multinomial/contingency_table.html" />
+    <mapID target="stat-cross-tabulation" url="javahelp/stat/multinomial/cross_tabulation.html"/>
+    <mapID target="stat-anova" url="javahelp/stat/anova/index.html" />
+    <mapID target="stat-anova1" url="javahelp/stat/anova/one_way.html" />
+    <mapID target="stat-anova2" url="javahelp/stat/anova/two_way.html" />
+    <mapID target="stat-nonparam-signtest" url="javahelp/stat/nonparam/sign_test.html"/>
+    <mapID target="stat-nonparam-2signtest" url="javahelp/stat/nonparam/2sign_test.html"/>
+    <mapID target="stat-nonparam-wilcoxon" url="javahelp/stat/nonparam/wilcoxon_signed_rank_test.html"/>
+    <mapID target="stat-nonparam-wilcoxon-rank-sum" url="javahelp/stat/nonparam/wilcoxon_rank_sum_test.html"/>
+    <mapID target="stat-nonparam-kruskal-wallis" url="javahelp/stat/nonparam/kruskal_wallis.html"/>
+    <mapID target="stat-nonparam-rank-correlation" url="javahelp/stat/nonparam/rank_correlation.html"/>
+    <mapID target="stat-nonparam-runs-test" url="javahelp/stat/nonparam/runs_test.html"/>
+
+    <!-- descriptive statistics -->
+    <mapID target="desc-iqr" url="javahelp/formula/descriptive/IQR.html"/>
+    <mapID target="desc-mssd" url="javahelp/formula/descriptive/MSSD.html"/>
+    <mapID target="desc-nmissing" url="javahelp/formula/descriptive/Nmissing.html"/>
+    <mapID target="desc-nnonmissing" url="javahelp/formula/descriptive/Nnonmissing.html"/>
+    <mapID target="desc-ntotal" url="javahelp/formula/descriptive/Ntotal.html"/>
+    <mapID target="desc-q1" url="javahelp/formula/descriptive/Q1.html"/>
+    <mapID target="desc-q3" url="javahelp/formula/descriptive/Q3.html"/>
+    <mapID target="desc-semean" url="javahelp/formula/descriptive/SEmean.html"/>
+    <mapID target="desc-coefficient_variation" url="javahelp/formula/descriptive/coefficient_variation.html"/>
+    <mapID target="desc-cumulativen" url="javahelp/formula/descriptive/cumulativeN.html"/>
+    <mapID target="desc-cumulativepercent" url="javahelp/formula/descriptive/cumulativePercent.html"/>
+    <mapID target="desc-kurtosis" url="javahelp/formula/descriptive/kurtosis.html"/>
+    <mapID target="desc-maximum" url="javahelp/formula/descriptive/maximum.html"/>
+    <mapID target="desc-mean" url="javahelp/formula/descriptive/mean.html"/>
+    <mapID target="desc-median" url="javahelp/formula/descriptive/median.html"/>
+    <mapID target="desc-minimum" url="javahelp/formula/descriptive/minimum.html"/>
+    <mapID target="desc-mode" url="javahelp/formula/descriptive/mode.html"/>
+    <mapID target="desc-percent" url="javahelp/formula/descriptive/percent.html"/>
+    <mapID target="desc-percentile" url="javahelp/formula/descriptive/percentile.html"/>
+    <mapID target="desc-range" url="javahelp/formula/descriptive/range.html"/>
+    <mapID target="desc-skewness" url="javahelp/formula/descriptive/skewness.html"/>
+    <mapID target="desc-stdev" url="javahelp/formula/descriptive/stdev.html"/>
+    <mapID target="desc-sum" url="javahelp/formula/descriptive/sum.html"/>
+    <mapID target="desc-sum_of_squares" url="javahelp/formula/descriptive/sum_of_squares.html"/>
+    <mapID target="desc-trimmed_mean" url="javahelp/formula/descriptive/trimmed_mean.html"/>
+    <mapID target="desc-variance" url="javahelp/formula/descriptive/variance.html"/>
+
+    <!-- graph -->
+    <mapID target="graph" url="javahelp/graph/index.html" />
+    <mapID target="graph-barchart" url="javahelp/graph/barchart.html" />
+    <mapID target="graph-boxplot" url="javahelp/graph/boxplot.html" />
+    <mapID target="graph-dotplot" url="javahelp/graph/dotplot.html" />
+    <mapID target="graph-histogram" url="javahelp/graph/histogram.html" />
+    <mapID target="graph-nqp" url="javahelp/graph/nqp.html" />
+    <mapID target="graph-piechart" url="javahelp/graph/piechart.html" />
+    <mapID target="graph-scatterplot" url="javahelp/graph/scatterplot.html" />
+    <mapID target="graph-stemplot" url="javahelp/graph/stemplot.html" />
+    <mapID target="graph-residual" url="javahelp/graph/residual.html" />
+
+    <!-- help -->
+    <mapID target="updates" url="javahelp/updates.html" />
+
+    <!-- Images -->
+    <mapID target="logo" url="logo.gif" />
+    <mapID target="small-logo" url="small.gif" />
+
+</map>

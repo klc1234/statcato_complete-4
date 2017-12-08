@@ -1,0 +1,67 @@
+<!-- 
+    Document   : histogram
+    Created on : May 8, 2008, 10:43:35 AM
+    Author     : myau
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Graph > Histogram</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+      <h1>Graph > Histogram</h1>
+      <p>
+      A histogram shows the frequencies of a number of bins (or classes) with
+      numerical boundaries.  The width of each bin is the same.  With this utility,
+      you can create histograms that represent the frequences or relative
+      frequencies of a set of bins.    
+      Any data value less than the minimum of all values will be assigned to the first bin, 
+      and any data value greater than the maximum will be assigned to the last bin. 
+      Values at bin boundary will be assigned to the 
+      higher bin.
+  </p>
+    <p>
+        <img src="images/histogram.gif">
+    </p>      
+
+  <p>
+      The histogram graph utility allows the user to specify graph variables 
+      containing data values and optionally a group variable.  
+      It also provides the options of having a plot title, axis labels, 
+      and legend.
+  </p>
+  <ul>
+<li>To open the histogram utility, select <b>Graph > Histogram</b>.</li>
+<li>In the <b>Graph Variables</b> list, select the column variable(s)
+      containing data values for which the plot will be created.  A different
+      color is used for each column variable.  </li>
+<li>(optional) If the column variables can be categorized by groups, select
+  the column containing the group names corresponding to the data values
+in the <b>Grouped By Categories in:</b> drop-down menu.</li>
+<li>Select whether to plot the frequencies or the relative frequencies of
+the bins under <b>Heights of bars represent:</b>.</li>
+<li>There are two ways to control binning on the x-axis:</li>
+<ol>
+<li>Provide the number of bins/classes, the minimum x value, and the maximum.
+The class width is determined by (maximum - minimum) / (number of classes).
+If the minimum and maximum are not provided, they will be the minimum and 
+maximum of all the data values.
+</li>
+<li>Provide the class width and the minimum x value.  The number of classes
+will be the smallest integer such that all data values are classified.</li>
+</ol>
+<li>Other Options:</li>
+<ul>
+<li>Enter the tick mark units (distance between two 
+consecutive ticks) in the tick mark units text field for the y-axis.</li>
+<li>Enter the plot title in the <b>Plot Title:</b> text field.</li>
+<li>Enter the labels for the x and y axes.</li>
+<li>Select the <b>Show Legend</b> check box to show a legend indicating
+the different groups.</li>
+</ul>
+<li>Click <b>OK</b> to create the histogram.</li>
+</ul>
+    
+  </body>
+</html>

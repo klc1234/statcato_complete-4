@@ -1,0 +1,53 @@
+<!-- 
+    Document   : two_pop_prop
+    Created on : Jun 6, 2008, 4:23:44 PM
+    Author     : myau
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Statistics > Confidence Intervals > Matched Pairs</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+      <h1>Statistics > Confidence Intervals > Matched Pairs</h1>
+      
+      <p>
+          This utility computes confidence intervals for the
+          mean of the differences between matched pairs.
+          The confidence interval estimate of the mean of 
+          the differences between matched paris &mu;<sub>d</sub> is:
+      </p>
+      <p>
+          <center><img src="ci_matched_pairs.gif"></center>
+      </p>
+      <p>
+          where the margin of error <i>E</i> is given by 
+          <img src="E_matched_pairs.gif">, <img src="d_bar.gif"> is 
+          the mean of the differences between sample matched pairs, 
+          and <img src="mu_d.gif"> is the mean of the differences
+          between population matched pairs. 
+      </p>
+      <h3>Dialog Inputs</h3>
+      <p>
+          The sample data can be inputted in one of two ways:
+          <ul>
+              <li><b>Samples in columns</b>: 
+              The sample matched pairs are provided in
+              two columns, and the two values in a matched pair
+              are provided in the same row.  
+              Select the column containing values of
+              the first sample in <b>First Sample:</b> drop-down menu.
+              Select the column containing values of the second sample 
+              in <b>Second Sample:</b> drop-down menu.
+              <li><b>Summarized Sample Data</b>: The sample size,
+              mean, and standard deviation
+              are provided (instead of individual sample values).</li>
+          </ul>
+      </p>
+      <p>
+          The confidence level must be between 0 and 1.  For example,
+          enter 0.95 for a 95% confidence level.
+      </p>
+  </body>
+</html>
